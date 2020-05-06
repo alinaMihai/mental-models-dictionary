@@ -12,6 +12,7 @@ export const BUTTON_MODIFIERS = {
         font-size: ${typeScale.header5};
   `,
     warning: ({ theme }) => `
+       color: ${theme.status.warningTextColor};
         &:hover, &:focus {
          background-color: ${theme.status.warningColorHover};
          color: ${theme.textColorInverted};
@@ -25,16 +26,15 @@ export const BUTTON_MODIFIERS = {
   `,
     primaryButtonWarning: ({ theme }) => `
         background-color: ${theme.status.warningColor};
-        color: ${theme.textColorInverted};
   `,
     secondaryButtonWarning: ({ theme }) => `
         background-color: ${theme.textColorInverted};
-        color:${theme.status.warningColor}; 
+        color:${theme.status.warningTextColor}; 
         border: 2px solid ${theme.status.warningColor};
   `,
     tertiaryButtonWarning: ({ theme }) => `
         background-color: ${theme.textColorInverted};
-        color: ${theme.status.warningColor};
+        color: ${theme.status.warningTextColor};
     `,
     error: ({ theme }) => `
        &:hover {
@@ -99,7 +99,7 @@ export const Button = styled.button`
     &:hover {
         background-color: ${(props) => props.theme.primaryHoverColor};
         color: ${(props) => props.theme.textColorOnPrimary};
-        box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);        
+        box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.75);
     }
 
     &:focus {
