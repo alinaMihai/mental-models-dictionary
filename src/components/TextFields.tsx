@@ -23,6 +23,8 @@ const Label = styled.label`
 //   placeholder?: string;
 // };
 
+
+
 export const EmailInput = ({ label, placeholder }: InputProps) => (
   <div style={{ display: 'flex', flexDirection: 'column', marginTop: '16px' }}>
     <Label htmlFor="email">{label}</Label>
