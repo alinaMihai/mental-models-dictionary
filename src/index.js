@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle, defaultTheme, darkTheme } from './utils';
+import { GlobalStyle, defaultTheme, darkTheme, ErrorBoundary } from './utils';
 import { SecondaryButton, PrimaryButton, TertiaryButton } from './components';
 
 const App = () => {
     const [isDarkTheme, setDarkTheme] = useState(false);
 
     return (
-        <ThemeProvider theme={isDarkTheme ? darkTheme : defaultTheme}>
+        <ErrorBoundary><ThemeProvider theme={isDarkTheme ? darkTheme : defaultTheme}>
             <div
                 style={{
                     backgroundColor: isDarkTheme ? defaultTheme.primaryColor : darkTheme.primaryColor,
@@ -28,6 +28,7 @@ const App = () => {
                 <GlobalStyle />
             </div>
         </ThemeProvider>
+        </ErrorBoundary>
     );
 };
 
