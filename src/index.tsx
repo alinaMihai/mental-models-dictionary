@@ -22,10 +22,7 @@ const App = () => {
             justifyContent: 'space-around',
           }}
         >
-          <PrimaryButton
-            modifiers={['large']}
-            onClick={() => setDarkTheme(!isDarkTheme)}
-          >
+          <PrimaryButton onClick={() => setDarkTheme(!isDarkTheme)}>
             Dark theme
           </PrimaryButton>
           <PrimaryButton>Primary Button</PrimaryButton>

@@ -8,3 +8,4 @@ dist/
 webpack/
 storybook-static/
 scripts/
+config/

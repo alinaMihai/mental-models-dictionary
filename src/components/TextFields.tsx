@@ -18,14 +18,19 @@ const Label = styled.label`
   margin-bottom: 8px;
 `;
 
-export const EmailInput = ({ label, placeholder }) => (
+// type InputProps = {
+//   label: string;
+//   placeholder?: string;
+// };
+
+export const EmailInput = ({ label, placeholder }: InputProps) => (
   <div style={{ display: 'flex', flexDirection: 'column', marginTop: '16px' }}>
     <Label htmlFor="email">{label}</Label>
     <Input id="email" type="email" placeholder={placeholder} />
   </div>
 );
 
-export const PasswordInput = ({ label, placeholder }) => (
+export const PasswordInput = ({ label, placeholder }: InputProps) => (
   <div style={{ display: 'flex', flexDirection: 'column', marginTop: '16px' }}>
     <Label htmlFor="password">{label}</Label>
     <Input id="password" type="password" placeholder={placeholder} />
