@@ -82,6 +82,13 @@
         "lint:format": "npm run lint && npm run format",
         "release": "standard-version"
     },
+    "lint-staged": {
+        "src/**/*.{ts,tsx}": [
+            "npm run format",
+            "npm run lint",
+            "git add"
+        ]
+    },
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
