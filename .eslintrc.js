@@ -1,35 +1,40 @@
 const path = require('path');
 module.exports = {
-    extends: [
-        'eslint:recommended',
-        'plugin:import/errors',
-        'plugin:react/recommended',
-        'plugin:jsx-a11y/recommended',
-        'prettier',
-        'prettier/react',
-    ],
-    rules: {
-        'react/prop-types': 0,
-        'react-hooks/rules-of-hooks': 'error'
+  extends: [
+    'eslint:recommended',
+    'plugin:import/errors',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+    'prettier',
+    'prettier/react',
+  ],
+  rules: {
+    'react/prop-types': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'no-console': 'warn',
+  },
+  parser: 'babel-eslint',
+  plugins: ['react', 'import', 'jsx-a11y', 'react-hooks'],
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
     },
-    parser: 'babel-eslint',
-    plugins: ['react', 'import', 'jsx-a11y', 'react-hooks'],
-    parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-        },
+  },
+  env: {
+    es6: true,
+    browser: true,
+    node: true,
+  },
+  settings: {
+    react: {
+      version: 'detect',
     },
-    env: {
-        es6: true,
-        browser: true,
-        node: true,
+    'import/resolver': {
+      webpack: {
+        config: path.resolve(__dirname, 'config/webpack.config.js'),
+      },
     },
-    settings: {
-        react: {
-            version: 'detect',
-        },
-        "import/resolver": "webpack"
-    },
+  },
 };

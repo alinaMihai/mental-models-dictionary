@@ -7,3 +7,4 @@ package.json
 dist/
 webpack/
 storybook-static/
+scripts/

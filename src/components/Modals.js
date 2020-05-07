@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { animated, useSpring } from "react-spring";
-import { typeScale, primaryFont } from "../utils";
-import { Illustrations, CloseIcon } from "../assets";
-import { PrimaryButton, SecondaryButton } from "./Buttons";
-import { EmailInput, PasswordInput } from "./TextFields";
+import React from 'react';
+import styled from 'styled-components';
+import { animated, useSpring } from 'react-spring';
+import { typeScale, primaryFont } from '../utils';
+import { Illustrations, CloseIcon } from '../assets';
+import { PrimaryButton, SecondaryButton } from './Buttons';
+import { EmailInput, PasswordInput } from './TextFields';
 
-const getAnimation = showModal => {
+const getAnimation = (showModal) => {
   return {
     opacity: showModal ? 1 : 0,
-    transform: showModal ? `translateY(0)` : `translateY(-200%)`
+    transform: showModal ? `translateY(0)` : `translateY(-200%)`,
   };
 };
 
@@ -18,8 +18,8 @@ const ModalWrapper = styled.div`
   height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   font-family: ${primaryFont};
-  background-color: ${props => props.theme.formElementBackground};
-  color: ${props => props.theme.textOnFormElementBackground};
+  background-color: ${(props) => props.theme.formElementBackground};
+  color: ${(props) => props.theme.textOnFormElementBackground};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +64,7 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
         <SignUpText>
           Sign up today to get access to all of our content and features!
         </SignUpText>
-        <PrimaryButton onClick={() => console.log("You signed up!")}>
+        <PrimaryButton onClick={() => console.log('You signed up!')}>
           Sign Up
         </PrimaryButton>
         <CloseModalButton
@@ -85,7 +85,7 @@ export const SignInModal = ({ showModal, setShowModal }) => (
         <ModalHeader>Sign In</ModalHeader>
         <EmailInput label="Email" placeholder="emmabostian@gmail.com" />
         <PasswordInput label="Password" />
-        <SecondaryButton style={{ margin: "16px 16px 0 0" }}>
+        <SecondaryButton style={{ margin: '16px 16px 0 0' }}>
           Sign Up
         </SecondaryButton>
         <PrimaryButton>Sign In</PrimaryButton>

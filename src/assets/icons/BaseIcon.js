@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { applyStyleModifiers } from "styled-components-modifiers";
+import styled from 'styled-components';
+import { applyStyleModifiers } from 'styled-components-modifiers';
 
 export const ICON_MODIFIERS = {
   small: () => `
@@ -12,9 +12,9 @@ export const ICON_MODIFIERS = {
   `,
   inverted: () => `
     > path {
-      fill: ${props => props.theme.primaryColor};
+      fill: ${(props) => props.theme.primaryColor};
     }
-  `
+  `,
 };
 
 const Icon = styled.svg`
@@ -24,14 +24,14 @@ const Icon = styled.svg`
   height: 16px;
 
   > path {
-    fill: ${props => props.theme.textColorOnPrimary};
+    fill: ${(props) => props.theme.textColorOnPrimary};
     transition: fill 0.2s linear;
   }
 
   &:hover,
   &:focus {
     > path {
-      fill: ${props => props.theme.textColorOnPrimary};
+      fill: ${(props) => props.theme.textColorOnPrimary};
     }
   }
 

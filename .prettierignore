@@ -4,3 +4,4 @@ node_modules
 .docz
 build
 coverage
+storybook-static/

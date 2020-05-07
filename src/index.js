@@ -5,31 +5,37 @@ import { GlobalStyle, defaultTheme, darkTheme, ErrorBoundary } from './utils';
 import { SecondaryButton, PrimaryButton, TertiaryButton } from './components';
 
 const App = () => {
-    const [isDarkTheme, setDarkTheme] = useState(false);
+  const [isDarkTheme, setDarkTheme] = useState(false);
 
-    return (
-        <ErrorBoundary><ThemeProvider theme={isDarkTheme ? darkTheme : defaultTheme}>
-            <div
-                style={{
-                    backgroundColor: isDarkTheme ? defaultTheme.primaryColor : darkTheme.primaryColor,
-                    width: '100vw',
-                    height: '100vh',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-around',
-                }}
-            >
-                <PrimaryButton modifiers={['large']} onClick={() => setDarkTheme(!isDarkTheme)}>
-                    Switch to dark theme
-                </PrimaryButton>
-                <PrimaryButton>Primary Button</PrimaryButton>
-                <SecondaryButton>Secondary</SecondaryButton>
-                <TertiaryButton>Tertiary</TertiaryButton>
-                <GlobalStyle />
-            </div>
-        </ThemeProvider>
-        </ErrorBoundary>
-    );
+  return (
+    <ErrorBoundary>
+      <ThemeProvider theme={isDarkTheme ? darkTheme : defaultTheme}>
+        <div
+          style={{
+            backgroundColor: isDarkTheme
+              ? defaultTheme.primaryColor
+              : darkTheme.primaryColor,
+            width: '100vw',
+            height: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+          }}
+        >
+          <PrimaryButton
+            modifiers={['large']}
+            onClick={() => setDarkTheme(!isDarkTheme)}
+          >
+            Dark theme
+          </PrimaryButton>
+          <PrimaryButton>Primary Button</PrimaryButton>
+          <SecondaryButton>Secondary</SecondaryButton>
+          <TertiaryButton>Tertiary</TertiaryButton>
+          <GlobalStyle />
+        </div>
+      </ThemeProvider>
+    </ErrorBoundary>
+  );
 };
 
 ReactDOM.render(<App />, document.querySelector('#root'));
