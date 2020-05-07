@@ -83,7 +83,7 @@
         "release": "standard-version"
     },
     "lint-staged": {
-        "src/**/*.{ts,tsx}": [
+        "*.{ts,tsx}": [
             "npm run format",
             "npm run lint",
             "git add"
