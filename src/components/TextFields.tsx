@@ -18,10 +18,10 @@ const Label = styled.label`
   margin-bottom: 8px;
 `;
 
-// type InputProps = {
-//   label: string;
-//   placeholder?: string;
-// };
+type InputProps = {
+  label: string;
+  placeholder?: string;
+};
 
 export const EmailInput = ({ label, placeholder }: InputProps) => (
   <div style={{ display: 'flex', flexDirection: 'column', marginTop: '16px' }}>
