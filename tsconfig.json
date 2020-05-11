@@ -8,7 +8,15 @@
     "jsx": "react",
     "esModuleInterop": true,
     "types": ["react", "jest"],
-    "lib": ["ESNext", "DOM"]
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "src",
+    "paths": {
+      "src": ["src"],
+      "helpers": ["helpers"],
+      "components": ["components"],
+      "screens": ["screens"],
+      "assets": ["assets"]
+    }
   },
   "include": ["./src/**/*"]
 }

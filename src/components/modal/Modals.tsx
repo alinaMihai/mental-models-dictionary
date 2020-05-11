@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { animated, useSpring } from 'react-spring';
-import { typeScale, primaryFont } from '../utils';
-import { Illustrations, CloseIcon } from '../assets';
-import { PrimaryButton, SecondaryButton } from './Buttons';
-import { EmailInput, PasswordInput } from './TextFields';
+import { typeScale, primaryFont } from 'helpers';
+import { Illustrations, CloseIcon } from 'assets';
+import { PrimaryButton, SecondaryButton } from '../buttons/Buttons';
+import { EmailInput, PasswordInput } from '../text-fields/TextFields';
 
 const getAnimation = (showModal) => {
   return {

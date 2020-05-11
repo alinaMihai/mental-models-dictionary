@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { typeScale, primaryFont } from '../utils';
+import { typeScale, primaryFont } from 'helpers';
 
 const Input = styled.input`
   width: 316px;
