@@ -5,3 +5,5 @@ export * from './footer/Footer';
 export * from './page-container/PageContainer';
 export * from './title/Title';
 export * from './subtitle/Subtitle';
+export * from './side-menu/SideMenu';
+export * from './app-router/AppRouter';
