@@ -1,5 +1,8 @@
 import React from 'react';
+import { PageContainer } from 'components';
 
 export const TopModels = () => {
-  return <div>Top Models</div>;
+  return (
+    <PageContainer title="Top Mental Models">Top Mental Models</PageContainer>
+  );
 };
