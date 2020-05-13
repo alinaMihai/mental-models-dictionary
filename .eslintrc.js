@@ -13,7 +13,9 @@ module.exports = {
         'react/prop-types': 0,
         'react-hooks/rules-of-hooks': 'error',
         'no-console': 'warn',
-        '@typescript-eslint/explicit-function-return-type': 0
+        '@typescript-eslint/explicit-function-return-type': 0,
+        '@typescript-eslit/ban-ts-ignore': 0,
+        '@typescript-eslit/no-explicit-any': 0
     },
     parser: "@typescript-eslint/parser", // Specifies the ESLint parser
     parserOptions: {

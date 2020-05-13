@@ -18,6 +18,7 @@ const FooterWrapper = styled.footer`
   background-color: ${(props) => props.theme.primaryColor};
   color: ${(props) => props.theme.textColorOnPrimary};
   padding: 10px;
+  width: 100%;
 `;
 
 export const Footer = () => {

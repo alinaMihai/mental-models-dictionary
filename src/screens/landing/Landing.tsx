@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PageContainer, SideMenu } from 'components';
+import { PageContainer } from 'components';
 
 export const Landing = () => {
   return (
@@ -8,7 +8,7 @@ export const Landing = () => {
       title="Mental Models Dictionary"
       subtitle="This dictionary is to be used as a reference to find more about various mental models."
     >
-      <SideMenu />
+      Landing Content
     </PageContainer>
   );
 };
