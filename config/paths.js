@@ -69,6 +69,7 @@ module.exports = {
     components: resolveApp('src/components'),
     screens: resolveApp('src/screens'),
     assets: resolveApp('src/assets'),
+    store: resolveApp('src/store'),
     publicUrlOrPath,
 };
 

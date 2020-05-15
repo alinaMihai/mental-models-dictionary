@@ -2,20 +2,22 @@
   "compilerOptions": {
     "sourceMap": true,
     "noImplicitAny": false,
+    "moduleResolution": "node",
     "module": "commonjs",
     "allowSyntheticDefaultImports": true,
     "target": "es6",
     "jsx": "react",
     "esModuleInterop": true,
     "types": ["react", "jest"],
-    "lib": ["ESNext", "DOM"],
+    "lib": ["es2018", "dom"],
     "baseUrl": "src",
     "paths": {
       "src": ["src"],
       "helpers": ["helpers"],
       "components": ["components"],
       "screens": ["screens"],
-      "assets": ["assets"]
+      "assets": ["assets"],
+      "store": ["store"]
     }
   },
   "include": ["./src/**/*"]

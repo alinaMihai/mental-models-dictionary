@@ -67,7 +67,8 @@ function getWebpackAliases() {
         components: paths.components,
         screens: paths.screens,
         helpers: paths.helpers,
-        assets: paths.assets
+        assets: paths.assets,
+        store: paths.store
     };
 }
 

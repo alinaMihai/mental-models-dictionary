@@ -2,6 +2,36 @@
     "name": "mental-models-dictionary",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+        "start": "node scripts/start.js",
+        "build": "node scripts/build.js",
+        "build:serve": "serve dist",
+        "report": "npm run build --withReport true",
+        "start:server": "node server/app.js",
+        "start:server-dev": "nodemon node server/app.js",
+        "test": "node scripts/test.js",
+        "test:coverage": "jest --coverage",
+        "test:watch": "jest --watch",
+        "test:update": "jest -u",
+        "storybook": "start-storybook -p 9009 -s public",
+        "build-storybook": "build-storybook -s public",
+        "format": "prettier --write \"**/*.{ts,tsx}\"",
+        "lint": "eslint \"**/*.{ts,tsx}\" --fix",
+        "lint:format": "npm run lint && npm run format",
+        "release": "standard-version"
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "npm run format",
+            "npm run lint",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
     "dependencies": {
         "@babel/core": "7.8.4",
         "@svgr/webpack": "4.3.3",
@@ -9,7 +39,7 @@
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
         "@types/jest": "^25.2.1",
-        "@types/node": "^13.13.5",
+        "@types/node": "^13.13.6",
         "@types/react": "^16.9.34",
         "@types/react-dom": "^16.9.7",
         "@types/react-redux": "^7.1.8",
@@ -64,6 +94,8 @@
         "rxjs": "^6.5.5",
         "sass-loader": "8.0.2",
         "semver": "6.3.0",
+        "serve": "^11.3.0",
+        "serve-favicon": "^2.5.0",
         "style-loader": "0.23.1",
         "styled-components": "^5.0.1",
         "styled-components-modifiers": "^1.2.5",
@@ -75,33 +107,6 @@
         "webpack-dev-server": "3.10.2",
         "webpack-manifest-plugin": "2.2.0",
         "workbox-webpack-plugin": "4.3.1"
-    },
-    "scripts": {
-        "start": "node scripts/start.js",
-        "build": "node scripts/build.js",
-        "test": "node scripts/test.js",
-        "test:coverage": "jest --coverage",
-        "test:watch": "jest --watch",
-        "test:update": "jest -u",
-        "storybook": "start-storybook -p 9009 -s public",
-        "build-storybook": "build-storybook -s public",
-        "format": "prettier --write \"**/*.{ts,tsx}\"",
-        "lint": "eslint \"**/*.{ts,tsx}\" --fix",
-        "lint:format": "npm run lint && npm run format",
-        "release": "standard-version",
-        "report": "npm run build --withReport true"
-    },
-    "lint-staged": {
-        "*.{ts,tsx}": [
-            "npm run format",
-            "npm run lint",
-            "git add"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
     },
     "browserslist": {
         "production": [
@@ -144,11 +149,15 @@
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-react": "^7.19.0",
         "eslint-plugin-react-hooks": "^4.0.0",
+        "express": "^4.17.1",
         "husky": "^4.2.5",
         "jest": "^26.0.1",
         "jest-styled-components": "^7.0.2",
         "lint-staged": "^10.2.2",
+        "nodemon": "^2.0.4",
+        "path": "^0.12.7",
         "prettier": "^2.0.5",
+        "redux-devtools-extension": "^2.13.8",
         "standard-version": "^8.0.0",
         "stylelint": "^13.3.3",
         "stylelint-config-recommended": "^3.0.0",
