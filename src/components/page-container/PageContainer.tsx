@@ -32,7 +32,6 @@ const FooterWrapper = styled.div`
 const Aside = styled.aside`
   grid-column: 1 / 5;
   grid-row: 2;
-  padding: 10px;
   align-self: flex-start;
   padding: 30px;
   ${({ theme }) => theme.tablet`
@@ -44,7 +43,6 @@ const Aside = styled.aside`
 `;
 const PageContainerWrapper = styled.div`
   height: 100vh;
-  width: 100vw;
   display: grid;
   & > * {
     display: flex;

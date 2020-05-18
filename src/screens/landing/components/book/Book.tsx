@@ -11,6 +11,6 @@ export interface BookItem {
 type BookProps = {
   item: BookItem;
 };
-export const Book: React.FC<BookProps> = ({ item: { name, id } }) => {
+export const Book: React.FC<BookProps> = ({ item: { name } }) => {
   return <Wrapper>{name}</Wrapper>;
 };

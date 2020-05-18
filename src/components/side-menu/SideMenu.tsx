@@ -12,15 +12,6 @@ const List = styled.ul`
   padding: 0;
   background-color: ${({ theme }) => theme.primaryColor};
   border-radius: 10px;
-  a:first-child,
-  a:last-child {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  a:hover:last-child {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
 `;
 const Item = styled.li<ItemProps>`
   a {
@@ -37,6 +28,15 @@ const Item = styled.li<ItemProps>`
     border-top: ${(props) => `1px solid ${props.theme.textColorOnPrimary}`};
     border-bottom: ${(props) => `1px solid ${props.theme.textColorOnPrimary}`};
     background-color: ${(props) => props.theme.primaryHoverColor};
+  }
+  a:first-child,
+  a:last-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  a:hover:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 `;
 

@@ -70,6 +70,7 @@ module.exports = {
     screens: resolveApp('src/screens'),
     assets: resolveApp('src/assets'),
     store: resolveApp('src/store'),
+    eslintConfig: resolveApp('.eslintrc.js'),
     publicUrlOrPath,
 };
 

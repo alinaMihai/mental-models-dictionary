@@ -1,227 +1,301 @@
-[
-  {"name": "General Thinking Tools",
-   "id": 1
-  },
-  {"name": "Numeracy",
-   "id": 2
-  },
-  {"name": "Systems",
-   "id": 3
-  },
- {"name": "Physics",
-   "id": 4
-  },
-{"name": "Biological World",
-   "id": 5
-  },
-  {"name": "Microeconomics & Competing",
-   "id": 6
-  },
-{"name": "Military",
-   "id": 7
-  },
-  {"name": "Sorting",
-   "id": 8
-  },
-  {"name": "Aggregation",
-   "id": 9
-  },
-  {"name": "Decision -Making",
-   "id": 10
-  },
-  {"name": "Human Nature",
-   "id": 11
-  },
-  {"name": "Bringing Models to Data",
-   "id": 12
-  },
-  {"name": "Tipping Points",
-   "id": 13
-  },
-  {"name": "Growth",
-   "id": 14
-  },
-  {"name": "Problem Solving",
-   "id": 15
-  },
-  {"name": "Markov",
-   "id": 16
-  },
-  {"name": "Lyapunov Functions",
-   "id": 17
-  },
-   {"name": "Culture",
-   "id": 18
-  },
-   {"name": "Path Dependence",
-   "id": 19
-  },
-   {"name": "Networks",
-   "id": 20
-  },
-  {"name": "Randomness",
-   "id": 21
-  },
-  {"name": "Game Theory",
-   "id": 22
-  },
-   {"name": "Cooperation",
-   "id": 23
-  },
-   {"name": "Mechanism Design",
-   "id": 24
-  },
-  {"name": "Replicator Dynamics",
-   "id": 25
-  },
-  {"name": "Prediction",
-   "id": 26
-  },
-  {"name": "Brainstorming",
-   "id": 27
-  },
-  {"name": "Interpreting",
-   "id": 28
-  },
-  {"name": "Reasoning",
-   "id": 29
-  },
-  {"name": "Negotiating",
-   "id": 29
-  },
-  {"name": "Mitigating",
-   "id": 31
-  },
-  {"name": "Managing",
-   "id": 32
-  },
- {"name": "Developing",
-   "id": 33
-  },
- {"name": "Influencing",
-   "id": 34
-  },
-   {"name": "Marketing",
-   "id": 35
-  },
-   {"name": "Strategizing",
-   "id": 36
-  },
-  {"name": "History",
-   "id": 37
-  },
-  {"name": "Sports",
-   "id": 38
-  },
-  {"name": "Market Failure",
-   "id": 39
-  },
-  {"name": "Political Failure",
-   "id": 40
-  },
-  {"name": "Investing",
-   "id": 41
-  },
-  {"name": "Learning",
-   "id": 42
-  },
-   {"name": "Productivity",
-   "id": 43
-  },
-   {"name": "Nature",
-   "id": 44
-  },
-  {"name": "Philosophy",
-   "id": 45
-  },
-    {"name": "Internet",
-   "id": 46
-  },
-   {"name": "Cognitive Biases",
-   "id": 47
-  },
-  {"name": "Business",
-   "id": 48
-  },
-  {"name": "Business - Psychology",
-   "id": 49
-  },
-    {"name": "Thinking",
-   "id": 50
-  },
-   {"name": "Science - Biology",
-   "id": 51
-  },
-   {"name": "Science - Chemistry",
-   "id": 52
-  },
-   {"name": "Math & Engineering",
-   "id": 53
-  },
-  {"name": "Evolution",
-   "id": 54
-  },
-   {"name": "Thinking About Free Will",
-   "id": 55
-  },
-  {"name": "Tools For Thinking About Content",
-   "id": 56
-  },
-  {"name": "Tools About Computers",
-   "id": 57
-  },
-  {"name": "Tools About Meaning",
-   "id": 58
-  },
-  {"name": "Tools For Thinking About Consciousness",
-   "id": 59
-  },
-  {"name": "Embrace Reality",
-   "id": 60
-  },
-  {"name": "Use the 5-Step Process to Get What You Want Out of Life",
-   "id": 61
-  },
-  {"name": "Be Radically Open-Minded",
-   "id": 62
-  },
-  {"name": "Trust in Radical Truth and Radical Transparency",
-   "id": 63
-  },
-  {"name": "Cultivate Meaningful Work and Meaningful Relationships",
-   "id": 64
-  },
-  {"name": "Get and Stay in Sync",
-   "id": 65
-  },
-    {"name": "Recognize How to Get Beyond Disagreements",
-   "id": 66
-  },
-   {"name": "Remember That the WHO Is More Important than the WHAT",
-   "id": 67
-  },
-  {"name": "Hire Right, Because the Penalties for Hiring Wrong Are Huge",
-   "id": 68
-  },
-  {"name": "Constantly Train, Test, Evaluate, and Sort People",
-   "id": 69
-  },
-  {"name": "Manage as Someone Operating a Machine to Achieve a Goal",
-   "id": 70
-  },
-  {"name": "Perceive and Don’t Tolerate Problems",
-   "id": 71
-  },
-  {"name": "Do What You Set Out to Do",
-   "id": 72
-  },
-  {"name": "Use Tools and Protocols to Shape How Work Is Done",
-   "id": 73
-  },
-  {"name": "Don't Overlook Governance",
-   "id": 74
-  },
-  {"name": "Product Mgmt",
-   "id": 75
-  }
+[{
+        "name": "General Thinking Tools",
+        "id": 1
+    },
+    {
+        "name": "Numeracy",
+        "id": 2
+    },
+    {
+        "name": "Systems",
+        "id": 3
+    },
+    {
+        "name": "Physics",
+        "id": 4
+    },
+    {
+        "name": "Biological World",
+        "id": 5
+    },
+    {
+        "name": "Microeconomics & Competing",
+        "id": 6
+    },
+    {
+        "name": "Military",
+        "id": 7
+    },
+    {
+        "name": "Sorting",
+        "id": 8
+    },
+    {
+        "name": "Aggregation",
+        "id": 9
+    },
+    {
+        "name": "Decision -Making",
+        "id": 10
+    },
+    {
+        "name": "Human Nature",
+        "id": 11
+    },
+    {
+        "name": "Bringing Models to Data",
+        "id": 12
+    },
+    {
+        "name": "Tipping Points",
+        "id": 13
+    },
+    {
+        "name": "Growth",
+        "id": 14
+    },
+    {
+        "name": "Problem Solving",
+        "id": 15
+    },
+    {
+        "name": "Markov",
+        "id": 16
+    },
+    {
+        "name": "Lyapunov Functions",
+        "id": 17
+    },
+    {
+        "name": "Culture",
+        "id": 18
+    },
+    {
+        "name": "Path Dependence",
+        "id": 19
+    },
+    {
+        "name": "Networks",
+        "id": 20
+    },
+    {
+        "name": "Randomness",
+        "id": 21
+    },
+    {
+        "name": "Game Theory",
+        "id": 22
+    },
+    {
+        "name": "Cooperation",
+        "id": 23
+    },
+    {
+        "name": "Mechanism Design",
+        "id": 24
+    },
+    {
+        "name": "Replicator Dynamics",
+        "id": 25
+    },
+    {
+        "name": "Prediction",
+        "id": 26
+    },
+    {
+        "name": "Brainstorming",
+        "id": 27
+    },
+    {
+        "name": "Interpreting",
+        "id": 28
+    },
+    {
+        "name": "Reasoning",
+        "id": 29
+    },
+    {
+        "name": "Negotiating",
+        "id": 30
+    },
+    {
+        "name": "Mitigating",
+        "id": 31
+    },
+    {
+        "name": "Managing",
+        "id": 32
+    },
+    {
+        "name": "Developing",
+        "id": 33
+    },
+    {
+        "name": "Influencing",
+        "id": 34
+    },
+    {
+        "name": "Marketing",
+        "id": 35
+    },
+    {
+        "name": "Strategizing",
+        "id": 36
+    },
+    {
+        "name": "History",
+        "id": 37
+    },
+    {
+        "name": "Sports",
+        "id": 38
+    },
+    {
+        "name": "Market Failure",
+        "id": 39
+    },
+    {
+        "name": "Political Failure",
+        "id": 40
+    },
+    {
+        "name": "Investing",
+        "id": 41
+    },
+    {
+        "name": "Learning",
+        "id": 42
+    },
+    {
+        "name": "Productivity",
+        "id": 43
+    },
+    {
+        "name": "Nature",
+        "id": 44
+    },
+    {
+        "name": "Philosophy",
+        "id": 45
+    },
+    {
+        "name": "Internet",
+        "id": 46
+    },
+    {
+        "name": "Cognitive Biases",
+        "id": 47
+    },
+    {
+        "name": "Business",
+        "id": 48
+    },
+    {
+        "name": "Business - Psychology",
+        "id": 49
+    },
+    {
+        "name": "Thinking",
+        "id": 50
+    },
+    {
+        "name": "Science - Biology",
+        "id": 51
+    },
+    {
+        "name": "Science - Chemistry",
+        "id": 52
+    },
+    {
+        "name": "Math & Engineering",
+        "id": 53
+    },
+    {
+        "name": "Evolution",
+        "id": 54
+    },
+    {
+        "name": "Thinking About Free Will",
+        "id": 55
+    },
+    {
+        "name": "Tools For Thinking About Content",
+        "id": 56
+    },
+    {
+        "name": "Tools About Computers",
+        "id": 57
+    },
+    {
+        "name": "Tools About Meaning",
+        "id": 58
+    },
+    {
+        "name": "Tools For Thinking About Consciousness",
+        "id": 59
+    },
+    {
+        "name": "Embrace Reality",
+        "id": 60
+    },
+    {
+        "name": "Use the 5-Step Process to Get What You Want Out of Life",
+        "id": 61
+    },
+    {
+        "name": "Be Radically Open-Minded",
+        "id": 62
+    },
+    {
+        "name": "Trust in Radical Truth and Radical Transparency",
+        "id": 63
+    },
+    {
+        "name": "Cultivate Meaningful Work and Meaningful Relationships",
+        "id": 64
+    },
+    {
+        "name": "Get and Stay in Sync",
+        "id": 65
+    },
+    {
+        "name": "Recognize How to Get Beyond Disagreements",
+        "id": 66
+    },
+    {
+        "name": "Remember That the WHO Is More Important than the WHAT",
+        "id": 67
+    },
+    {
+        "name": "Hire Right, Because the Penalties for Hiring Wrong Are Huge",
+        "id": 68
+    },
+    {
+        "name": "Constantly Train, Test, Evaluate, and Sort People",
+        "id": 69
+    },
+    {
+        "name": "Manage as Someone Operating a Machine to Achieve a Goal",
+        "id": 70
+    },
+    {
+        "name": "Perceive and Don’t Tolerate Problems",
+        "id": 71
+    },
+    {
+        "name": "Do What You Set Out to Do",
+        "id": 72
+    },
+    {
+        "name": "Use Tools and Protocols to Shape How Work Is Done",
+        "id": 73
+    },
+    {
+        "name": "Don't Overlook Governance",
+        "id": 74
+    },
+    {
+        "name": "Product Mgmt",
+        "id": 75
+    }
 ]
