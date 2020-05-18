@@ -15,6 +15,8 @@ export const defaultTheme = {
   textOnDisabled: neutral[300],
   textFieldBackground: neutral[200],
   textFieldLabelColor: neutral[500],
+  accentLight: yellow[200],
+  accentDark: yellow[100],
   status: {
     warningColor: yellow[200],
     warningColorHover: yellow[100],
@@ -43,6 +45,8 @@ export const darkTheme = {
   textOnDisabled: neutral[300],
   textFieldBackground: neutral[200],
   textFieldLabelColor: neutral[100],
+  accentLight: yellow[200],
+  accentDark: yellow[100],
   status: {
     warningColor: yellow[100],
     warningColorHover: yellow[200],
