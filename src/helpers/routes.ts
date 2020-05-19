@@ -1,4 +1,10 @@
-import { Landing, About, TopModels, MoreResources } from 'screens';
+import {
+  Landing,
+  About,
+  TopModels,
+  MoreResources,
+  MentalModelsByCategory,
+} from 'screens';
 
 interface Route {
   component: any;
@@ -21,5 +27,9 @@ export const routes: Route[] = [
   {
     component: MoreResources,
     path: '/more-resources',
+  },
+  {
+    component: MentalModelsByCategory,
+    path: '/mental-models/:id',
   },
 ];

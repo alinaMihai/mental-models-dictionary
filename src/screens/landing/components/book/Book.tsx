@@ -70,7 +70,7 @@ export const Book: React.FC<BookProps> = ({ item: { name, id } }) => {
   return (
     <Wrapper>
       <img src={Illustrations.cover} alt="book-cover" aria-hidden="true" />
-      <Link to={`/mental-model/${id}`}>
+      <Link to={`/mental-models/${id}`}>
         <p>{name}</p>
       </Link>
     </Wrapper>

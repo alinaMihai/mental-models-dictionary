@@ -6,7 +6,7 @@ import {
 } from '../actions/categories.action';
 import { apiBase } from 'helpers/app.constants';
 
-function* fetchMethod({
+export function* fetchMethod({
   path,
   params,
   options,
