@@ -11,7 +11,7 @@ const Content = styled.div`
   align-self: flex-start;
   width: 100%;
   height: 100%;
-  ${({ theme }) => theme.tablet`
+  ${({ theme }) => theme.laptopL`
     grid-column: 2 / 6;
   `}
 `;
@@ -20,7 +20,7 @@ const Header = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-column: 1 / 5;
+  grid-column: 1 / 6;
   align-self: flex-start;
   padding: 10px;
   text-align: center;
@@ -30,11 +30,11 @@ const FooterWrapper = styled.div`
   align-self: flex-end;
 `;
 const Aside = styled.aside`
-  grid-column: 1 / 5;
+  grid-column: 1 / 6;
   grid-row: 2;
   align-self: flex-start;
   padding: 30px;
-  ${({ theme }) => theme.tablet`
+  ${({ theme }) => theme.laptopL`
     position: fixed;
     top: 200px;
     grid-column: 1;
@@ -48,7 +48,7 @@ const PageContainerWrapper = styled.div`
     display: flex;
     align-items: center;
   }
-  ${({ theme }) => theme.tablet`
+  ${({ theme }) => theme.laptopL`
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 200px 1fr;
   `}

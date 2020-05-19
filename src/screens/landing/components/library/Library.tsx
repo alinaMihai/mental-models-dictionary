@@ -7,6 +7,7 @@ const Row = styled.ul`
   width: 100%;
   list-style: none;
   display: flex;
+  justify-content: center;
   > li {
     flex: 1;
   }
@@ -21,13 +22,13 @@ type LibraryProps = {
 };
 
 export const Library = ({ items = [] }: LibraryProps) => {
-  const getRows = () => {
+  const getRows = (itemsPerRow = 6) => {
     let i = 0;
     const rows = [];
     while (i < items.length) {
       const row = [items[i]];
       i++;
-      while (i % 6 !== 0 && i < items.length) {
+      while (i % itemsPerRow !== 0 && i < items.length) {
         row.push(items[i]);
         i++;
       }

@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { Illustrations } from 'assets';
 
 const Wrapper = styled.li`
   width: auto;
-  height: 100px;
   display: flex;
   align-items: center;
   position: relative;
   margin-right: 10px;
   padding: 10px;
   margin-top: 10px;
-  height: 158px;
+  height: 200px;
   max-width: 150px;
   word-break: break-all;
-  border: 1px solid gray;
   cursor: pointer;
   :hover {
     box-shadow: ${(props) => `6px 6px 5px ${props.theme.textColor}`};
@@ -27,9 +26,35 @@ const Wrapper = styled.li`
     background: rgba(0, 0, 0, 0.35);
     border-radius: 59%;
     position: absolute;
-    top: 157px;
+    top: 203px;
     filter: blur(3px);
     z-index: -5;
+  }
+  img {
+    border-style: none;
+    position: absolute;
+    height: 200px;
+    width: 151px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 33px;
+
+    p {
+      padding: 20px 0;
+      word-break: break-word;
+    }
   }
 `;
 
@@ -44,7 +69,10 @@ type BookProps = {
 export const Book: React.FC<BookProps> = ({ item: { name, id } }) => {
   return (
     <Wrapper>
-      <Link to={`/mental-model/${id}`}>{name}</Link>
+      <img src={Illustrations.cover} alt="book-cover" aria-hidden="true" />
+      <Link to={`/mental-model/${id}`}>
+        <p>{name}</p>
+      </Link>
     </Wrapper>
   );
 };

@@ -3,6 +3,8 @@ declare module '*.svg' {
   export default content;
 }
 
+declare module '*.jpg';
+declare module '*.png';
 declare const process: {
   env: {
     NODE_ENV: string;

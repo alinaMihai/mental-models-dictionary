@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   position: relative;
   z-index: -10;
   margin-top: -13px;
+  margin-bottom: 30px;
   ::after {
     content: '';
     background: ${(props) => props.theme.accentDark};
