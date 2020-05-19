@@ -36,7 +36,11 @@ export class AppRouter extends React.Component<any, any> {
             />
           ))}
         </Switch>
-        <Redirect exact from="/" to="/landing" />
+        <Route
+          exact
+          path="/"
+          render={() => <Redirect exact from="/" to="/landing" />}
+        />
       </Router>
     );
   }

@@ -8,35 +8,28 @@ interface ItemProps {
 
 const List = styled.ul`
   list-style: none;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  background-color: ${({ theme }) => theme.primaryColor};
-  border-radius: 10px;
 `;
 const Item = styled.li<ItemProps>`
   a {
-    color: ${({ theme }) => theme.textColorOnPrimary};
+    color: ${(props) =>
+      props.isActive ? props.theme.textColorOnPrimary : props.theme.textColor};
     text-decoration: ${(props) => (props.isActive ? 'underline' : 'none')};
-    background-color: ${(props) =>
-      props.isActive && props.theme.primaryHoverColor};
+    color: ${(props) => props.isActive && props.theme.primaryColor};
     text-align: center;
     display: inline-block;
     width: 100%;
     padding: 20px;
+    font-weight: ${(props) => (props.isActive ? 'bold' : 'normal')};
   }
   a:hover {
-    border-top: ${(props) => `1px solid ${props.theme.textColorOnPrimary}`};
-    border-bottom: ${(props) => `1px solid ${props.theme.textColorOnPrimary}`};
-    background-color: ${(props) => props.theme.primaryHoverColor};
-  }
-  a:first-child,
-  a:last-child {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  a:hover:last-child {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    color: ${({ theme }) => theme.primaryColor};
+    text-decoration: underline;
   }
 `;
 

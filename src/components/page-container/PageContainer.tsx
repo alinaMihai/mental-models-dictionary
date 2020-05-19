@@ -29,17 +29,8 @@ const FooterWrapper = styled.div`
   grid-column: 1 / 6;
   align-self: flex-end;
 `;
-const Aside = styled.aside`
-  grid-column: 1 / 6;
-  grid-row: 2;
-  align-self: flex-start;
-  padding: 30px;
-  ${({ theme }) => theme.laptopL`
-    position: fixed;
-    top: 200px;
-    grid-column: 1;
-    padding: 10px;
-  `}
+const TopMenu = styled.div`
+  padding: 30px;}
 `;
 const PageContainerWrapper = styled.div`
   height: 100vh;
@@ -65,9 +56,9 @@ export const PageContainer = ({
 }: IpageContainer) => {
   return (
     <PageContainerWrapper>
-      <Aside>
+      <TopMenu>
         <SideMenu />
-      </Aside>
+      </TopMenu>
       <Header>
         <Title>{title}</Title>
         {subtitle && <Subtitle>{subtitle}</Subtitle>}
