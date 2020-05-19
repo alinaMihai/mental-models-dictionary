@@ -12,7 +12,6 @@ function getMentalModels(req, res) {
 function getMentalModelsByCategory(req, res) {
     const categoryId = req.params.id;
     const byCategory = mentalModels.filter(item => item.Category == categoryId);
-    console.log(req.params.id, byCategory)
     return res.status(200).json(byCategory);
 }
 
