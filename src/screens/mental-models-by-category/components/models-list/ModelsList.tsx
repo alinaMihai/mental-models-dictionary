@@ -17,7 +17,8 @@ const List = styled.ul`
   margin-left: 0;
   padding-left: 0;
   ${({ theme }) => theme.laptop`
-     max-height:  calc(100vh / 2 - -26px)
+     max-height:  calc(100vh / 2 - -26px);
+     width: 300px;
   `}
 `;
 
@@ -51,13 +52,24 @@ type Props = {
   items: MentalModel[];
   cursor: number;
   onClick(item: MentalModel, index: number): void;
+  handleMouseOver(value: boolean): void;
 };
 
-export const ModelsList = ({ items, cursor, onClick }: Props) => {
+export const ModelsList = ({
+  items,
+  cursor,
+  onClick,
+  handleMouseOver,
+}: Props) => {
   return (
     <Wrapper>
       <h3>Mental Model</h3>
-      <List>
+      <List
+        onMouseOver={() => handleMouseOver(true)}
+        onFocus={() => handleMouseOver(true)}
+        onMouseOut={() => handleMouseOver(false)}
+        onBlur={() => handleMouseOver(false)}
+      >
         {items.map((item, index) => (
           <Item id={`${index}`} key={index} active={index === cursor}>
             {' '}

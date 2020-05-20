@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Linkify from 'react-linkify';
 import { MentalModel } from '../models-list/ModelsList';
 
 const Wrapper = styled.div`
@@ -22,13 +23,24 @@ type Props = {
 
 export const ModelView = ({ item }: Props) => {
   return !item.Model ? (
-    <p>Click on one of the mental models to see details</p>
+    <p>
+      Click on one of the mental models to see details. Use up and down arrow
+      keys to navigate through the list
+    </p>
   ) : (
     <Wrapper id={'modelView'}>
       <h2>{item.Model}</h2>
       <div>
         <p>{item.Description}</p>
-        <p>{item.Source}</p>
+        <Linkify
+          componentDecorator={(decoratedHred, decoratedText, key) => (
+            <a target="blank" href={decoratedHred} key={key}>
+              {decoratedText}
+            </a>
+          )}
+        >
+          <p>{item.Source}</p>
+        </Linkify>
       </div>
     </Wrapper>
   );

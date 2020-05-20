@@ -34,9 +34,10 @@ interface ParamTypes {
 export const MentalModelsByCategory: React.FC = () => {
   const params = useParams<ParamTypes>();
   const [selectedModel, setSelectedModel] = useState({} as MentalModel);
+  const [isMouseOverList, setIsMouseOverList] = useState(false);
   const [downPress, setDownPressed] = useKeyPress('ArrowDown');
   const [upPress, setUpPressed] = useKeyPress('ArrowUp');
-  const [cursor, setCursor] = useState(0);
+  const [cursor, setCursor] = useState(-1);
   const dispatch = useDispatch();
   const models = useSelector(getModelsByCategorySelector);
   const category: BookItem =
@@ -53,28 +54,28 @@ export const MentalModelsByCategory: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (models.length && downPress) {
+    if (models.length && downPress && isMouseOverList) {
       setCursor((prevState) =>
         prevState < models.length - 1 ? prevState + 1 : prevState,
       );
       (setDownPressed as any)(false);
     }
-  }, [downPress]);
+  }, [downPress, isMouseOverList]);
 
   useEffect(() => {
-    if (models.length && upPress) {
+    if (models.length && upPress && isMouseOverList) {
       setCursor((prevState) => (prevState > 0 ? prevState - 1 : prevState));
       (setUpPressed as any)(false);
     }
-  }, [upPress]);
+  }, [upPress, isMouseOverList]);
 
   useEffect(() => {
-    if (models.length) {
+    if (models.length && cursor >= 0 && isMouseOverList) {
       const element = document.getElementById(`${cursor}`);
       if (element) {
         const view = document.getElementById('modelView');
         if (view) {
-          view.scrollTop = 0;
+          view.scrollTop = 10;
         }
         element.scrollIntoView();
       }
@@ -90,7 +91,12 @@ export const MentalModelsByCategory: React.FC = () => {
   return (
     <PageContainer title={category.name}>
       <Wrapper>
-        <ModelsList items={models} cursor={cursor} onClick={handleItemClick} />
+        <ModelsList
+          items={models}
+          cursor={cursor}
+          onClick={handleItemClick}
+          handleMouseOver={setIsMouseOverList}
+        />
         <ModelView item={selectedModel} />
       </Wrapper>
     </PageContainer>
