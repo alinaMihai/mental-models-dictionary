@@ -11,9 +11,7 @@ const Content = styled.div`
   align-self: flex-start;
   width: 100%;
   height: 100%;
-  ${({ theme }) => theme.laptopL`
-    grid-column: 2 / 6;
-  `}
+  padding-top: 0;
 `;
 
 const Header = styled.header`
@@ -24,16 +22,20 @@ const Header = styled.header`
   align-self: flex-start;
   padding: 10px;
   text-align: center;
+  width: calc(100vw - 30px);
+  padding-bottom: 0;
+  padding-top: 0;
 `;
 const FooterWrapper = styled.div`
   grid-column: 1 / 6;
   align-self: flex-end;
 `;
 const TopMenu = styled.div`
-  padding: 30px;}
+  padding: 30px;
 `;
 const PageContainerWrapper = styled.div`
   height: 100vh;
+  overflow: hidden;
   display: grid;
   & > * {
     display: flex;

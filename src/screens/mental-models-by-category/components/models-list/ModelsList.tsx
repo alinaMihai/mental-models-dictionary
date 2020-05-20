@@ -1,7 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  ${({ theme }) => theme.laptop`
+      width: 300px;
+  `}
+`;
+
+const List = styled.ul`
+  list-style: none;
+  max-height: calc(100vh / 2 - 142px);
+  overflow-y: auto;
+  margin-left: 0;
+  padding-left: 0;
+  ${({ theme }) => theme.laptop`
+     max-height:  calc(100vh / 2 - -26px)
+  `}
+`;
+
+const Item = styled.li<{ active: boolean }>`
+  padding: 10px 0;
+  border-bottom: ${(props) => `1px dashed ${props.theme.primaryColor}`};
+  margin-right: 16px;
+  button {
+    background-color: white;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    color: ${(props) =>
+      props.active ? props.theme.primaryColor : props.theme.textColor};
+    font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
+    word-break: break-word;
+  }
+  button:hover {
+    color: ${(props) => props.theme.primaryColor};
+    font-weight: bold;
+  }
+`;
 export interface MentalModel {
   Category: number;
   Model: string;
@@ -11,29 +49,24 @@ export interface MentalModel {
 
 type Props = {
   items: MentalModel[];
-  currentSelection: string;
-  onClick(item: MentalModel): void;
+  cursor: number;
+  onClick(item: MentalModel, index: number): void;
 };
 
-export const ModelsList = ({ items, currentSelection, onClick }: Props) => {
-  const handleClick = (item) => {
-    onClick(item);
-  };
+export const ModelsList = ({ items, cursor, onClick }: Props) => {
   return (
     <Wrapper>
-      List of mental models
-      {items.map((item, index) => (
-        <div
-          role="button"
-          tabIndex={index}
-          key={index}
-          className={`${currentSelection === item.Model && 'selected'}`}
-          onKeyPress={() => handleClick(item)}
-          onClick={() => handleClick(item)}
-        >
-          {item.Model}
-        </div>
-      ))}
+      <h3>Mental Model</h3>
+      <List>
+        {items.map((item, index) => (
+          <Item id={`${index}`} key={index} active={index === cursor}>
+            {' '}
+            <button onClick={() => onClick(item, index)}>
+              {item.Model} {index === cursor && <span>&gt;</span>}
+            </button>
+          </Item>
+        ))}
+      </List>
     </Wrapper>
   );
 };

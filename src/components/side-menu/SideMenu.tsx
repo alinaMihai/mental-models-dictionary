@@ -17,10 +17,9 @@ const List = styled.ul`
 `;
 const Item = styled.li<ItemProps>`
   a {
-    color: ${(props) =>
-      props.isActive ? props.theme.textColorOnPrimary : props.theme.textColor};
     text-decoration: ${(props) => (props.isActive ? 'underline' : 'none')};
-    color: ${(props) => props.isActive && props.theme.primaryColor};
+    color: ${(props) =>
+      props.isActive ? props.theme.primaryColor : props.theme.textColor};
     text-align: center;
     display: inline-block;
     width: 100%;

@@ -6,3 +6,4 @@ export * from './ErrorBoundary';
 export * from './routes';
 export * from './media-query';
 export * from './useWindowSize.hook';
+export * from './useKeyPress.hook';

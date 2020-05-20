@@ -4,6 +4,15 @@ import { Book, BookItem } from '../book/Book';
 import { BookShelf } from '../book-shelf/BookShelf';
 import { useWindowSize, sizes } from 'helpers';
 
+const Wrapper = styled.div`
+  width: 100%;
+  overflow-y: auto;
+  max-height: calc(100vh / 2 - 23px);
+  ${({ theme }) => theme.laptop`
+    max-height:  calc(100vh / 2 - -85px);
+  `}
+`;
+
 const Row = styled.ul`
   width: 100%;
   list-style: none;
@@ -13,10 +22,9 @@ const Row = styled.ul`
   > li {
     flex: 1;
   }
-`;
-
-const Wrapper = styled.div`
-  width: 100%;
+  &:last-child {
+    align-self: flex-start;
+  }
 `;
 
 type LibraryProps = {
