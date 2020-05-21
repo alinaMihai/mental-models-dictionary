@@ -15,6 +15,7 @@ This project was implemented using the following technologies:
 - Storybook
 - Linting and formating with ESLint and Prettier
 - Bundled with Webpack
+- Served using NodeJs and Express
 
 ## Setup
 - Run Client locally: 
