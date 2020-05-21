@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   p {
     padding-right: 10px;
     white-space: pre-wrap;
+    line-height: 1.6;
   }
   ${({ theme }) => theme.laptop`
      margin-left:40px;

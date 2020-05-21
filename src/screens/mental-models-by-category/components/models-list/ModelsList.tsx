@@ -30,6 +30,7 @@ const Item = styled.li<{ active: boolean }>`
     background-color: white;
     text-align: left;
     border: none;
+    line-height: 1.4;
     cursor: pointer;
     color: ${(props) =>
       props.active ? props.theme.primaryColor : props.theme.textColor};
