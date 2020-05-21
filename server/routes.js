@@ -17,4 +17,5 @@ module.exports = function(app) {
     // API endpoints
     app.use('/api/categories', require('./api/categories'));
     app.use('/api/models', require('./api/models'));
+    app.use('/api/resources', require('./api/resources'));
 }
