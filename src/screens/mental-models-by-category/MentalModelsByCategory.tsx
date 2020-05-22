@@ -7,11 +7,13 @@ import {
 import {
   getModelsByCategorySelector,
   getCategoryByIdSelector,
+  isLoadingModelsSelector,
 } from 'store/selectors';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 
 import { PageContainer } from 'components';
+import Spinner from 'components/spinner/Spinner';
 import { useKeyPress } from 'helpers';
 import { ModelsList, MentalModel } from './components/models-list/ModelsList';
 import { ModelView } from './components/model-view/ModelView';
@@ -31,7 +33,7 @@ interface ParamTypes {
   id: string;
 }
 
-export const MentalModelsByCategory: React.FC = () => {
+const MentalModelsByCategory: React.FC = () => {
   const params = useParams<ParamTypes>();
   const [selectedModel, setSelectedModel] = useState({} as MentalModel);
   const [isMouseOverList, setIsMouseOverList] = useState(false);
@@ -42,12 +44,12 @@ export const MentalModelsByCategory: React.FC = () => {
   const models = useSelector(getModelsByCategorySelector);
   const category: BookItem =
     useSelector(getCategoryByIdSelector(Number(params.id))) || ({} as BookItem);
-
+  const isLoading = useSelector(isLoadingModelsSelector);
   useEffect(() => {
     if (!category.name) {
       dispatch(fetchCategoriesAction());
     }
-  }, [category]);
+  }, []);
 
   useEffect(() => {
     dispatch(fetchModelsByCategoryAction(params.id));
@@ -90,15 +92,21 @@ export const MentalModelsByCategory: React.FC = () => {
 
   return (
     <PageContainer title={category.name}>
-      <Wrapper>
-        <ModelsList
-          items={models}
-          cursor={cursor}
-          onClick={handleItemClick}
-          handleMouseOver={setIsMouseOverList}
-        />
-        <ModelView item={selectedModel} />
-      </Wrapper>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <Wrapper>
+          <ModelsList
+            items={models}
+            cursor={cursor}
+            onClick={handleItemClick}
+            handleMouseOver={setIsMouseOverList}
+          />
+          <ModelView item={selectedModel} />
+        </Wrapper>
+      )}
     </PageContainer>
   );
 };
+
+export default MentalModelsByCategory;

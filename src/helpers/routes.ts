@@ -1,11 +1,5 @@
-import {
-  Landing,
-  About,
-  TopModels,
-  MoreResources,
-  MentalModelsByCategory,
-} from 'screens';
-
+import React from 'react';
+import { Landing } from 'screens/landing/Landing';
 interface Route {
   component: any;
   path: string;
@@ -17,19 +11,21 @@ export const routes: Route[] = [
     path: '/landing',
   },
   {
-    component: About,
+    component: React.lazy(() => import('screens/about/About')),
     path: '/about',
   },
   {
-    component: TopModels,
+    component: React.lazy(() => import('screens/top-models/TopModels')),
     path: '/top-models',
   },
   {
-    component: MoreResources,
+    component: React.lazy(() => import('screens/more-resources/MoreResources')),
     path: '/more-resources',
   },
   {
-    component: MentalModelsByCategory,
+    component: React.lazy(() =>
+      import('screens/mental-models-by-category/MentalModelsByCategory'),
+    ),
     path: '/mental-models/:id',
   },
 ];
