@@ -8,6 +8,6 @@ declare module '*.png';
 declare const process: {
   env: {
     NODE_ENV: string;
-    API_URL: string;
+    REACT_APP_API_URL: string;
   };
 };
