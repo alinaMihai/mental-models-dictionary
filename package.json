@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "start": "node server/app.js",
+        "start": "npm run build && node server/app.js",
         "start:client": "node scripts/start.js",
         "build": "node scripts/build.js",
         "build:serve": "serve build",
