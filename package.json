@@ -5,7 +5,7 @@
     "scripts": {
         "start": "npm run build && node server/app.js",
         "start:client": "node scripts/start.js",
-        "build": "node scripts/build.js",
+        "build": "node scripts/build.js && node server/app.js",
         "build:serve": "serve build",
         "report": "npm run build --withReport true",
         "start:server": "node server/app.js",
