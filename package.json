@@ -5,7 +5,7 @@
     "scripts": {
         "start": "node scripts/start.js",
         "build": "node scripts/build.js",
-        "build:serve": "serve dist",
+        "build:serve": "serve build",
         "report": "npm run build --withReport true",
         "start:server": "node server/app.js",
         "start:server-dev": "nodemon node server/app.js",
