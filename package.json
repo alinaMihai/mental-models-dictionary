@@ -3,9 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "start": "node scripts/start.js",
+        "start": "node server/app.js",
+        "start:client": "node scripts/start.js",
         "build": "node scripts/build.js",
-        "heroku-postbuild": "npm run start:server && npm run build",
         "build:serve": "serve build",
         "report": "npm run build --withReport true",
         "start:server": "node server/app.js",
