@@ -12,12 +12,11 @@ const Wrapper = styled.div`
 
 const List = styled.ul`
   list-style: none;
-  max-height: calc(100vh / 2 - 142px);
   overflow-y: auto;
   margin-left: 0;
   padding-left: 0;
   ${({ theme }) => theme.laptop`
-     max-height:  calc(100vh / 2 - -26px);
+     max-height:  calc(100vh - -26px);
      width: 300px;
   `}
 `;

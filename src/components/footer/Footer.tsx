@@ -15,8 +15,8 @@ const Copyright = ({ text }) => {
 };
 
 const FooterWrapper = styled.footer`
-  background-color: ${(props) => props.theme.primaryColor};
-  color: ${(props) => props.theme.textColorOnPrimary};
+  background-color: ${(props) => props.theme.accentLight};
+  color: ${(props) => props.theme.textColor};
   padding: 10px;
   width: 100%;
 `;

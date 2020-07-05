@@ -19,15 +19,25 @@ import { ModelsList, MentalModel } from './components/models-list/ModelsList';
 import { ModelView } from './components/model-view/ModelView';
 import { BookItem } from '../landing/components/book/Book';
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 278px);
+const WrapperDesktop = styled.div`
+  display: none; 
   ${({ theme }) => theme.laptop`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     flex-direction: row;
     height: 100%;
   `}
 `;
+
+const WrapperMobile = styled.div`
+   display: flex;
+   flex-direction: column;
+   max-width: 100%;
+   ${({ theme }) => theme.laptop`
+    display: none;
+  `}
+`
 
 interface ParamTypes {
   id: string;
@@ -73,14 +83,6 @@ const MentalModelsByCategory: React.FC = () => {
 
   useEffect(() => {
     if (models.length && cursor >= 0 && isMouseOverList) {
-      const element = document.getElementById(`${cursor}`);
-      if (element) {
-        const view = document.getElementById('modelView');
-        if (view) {
-          view.scrollTop = 10;
-        }
-        element.scrollIntoView();
-      }
       setSelectedModel(models[cursor]);
     }
   }, [cursor, models]);
@@ -94,8 +96,8 @@ const MentalModelsByCategory: React.FC = () => {
     <PageContainer title={category.name}>
       {isLoading ? (
         <Spinner />
-      ) : (
-        <Wrapper>
+      ) : (<>
+        <WrapperDesktop>
           <ModelsList
             items={models}
             cursor={cursor}
@@ -103,7 +105,16 @@ const MentalModelsByCategory: React.FC = () => {
             handleMouseOver={setIsMouseOverList}
           />
           <ModelView item={selectedModel} />
-        </Wrapper>
+        </WrapperDesktop>
+
+        <WrapperMobile>
+          {models.map((item, i) => (
+            <div key={i}>
+                <ModelView item={item}/>
+            </div>
+          ))}
+        </WrapperMobile>
+        </>
       )}
     </PageContainer>
   );

@@ -6,12 +6,15 @@ import { Subtitle } from '../subtitle/Subtitle';
 import { SideMenu } from '../side-menu/SideMenu';
 
 const Content = styled.div`
-  grid-column: 1 / 6;
+  grid-column: 1/6;
   padding: 10px;
   align-self: flex-start;
   width: 100%;
   height: 100%;
   padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 355px;
 `;
 
 const Header = styled.header`
@@ -25,6 +28,7 @@ const Header = styled.header`
   width: calc(100vw - 30px);
   padding-bottom: 0;
   padding-top: 0;
+  margin-top: 20px;
 `;
 const FooterWrapper = styled.div`
   grid-column: 1 / 6;
@@ -35,7 +39,7 @@ const TopMenu = styled.div`
 `;
 const PageContainerWrapper = styled.div`
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   display: grid;
   & > * {
     display: flex;

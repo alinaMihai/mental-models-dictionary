@@ -7,10 +7,6 @@ import { useWindowSize, sizes } from 'helpers';
 const Wrapper = styled.div`
   width: 100%;
   overflow-y: auto;
-  max-height: calc(100vh / 2 - 23px);
-  ${({ theme }) => theme.laptop`
-    max-height:  calc(100vh / 2 - -85px);
-  `}
 `;
 
 const Row = styled.ul`

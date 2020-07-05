@@ -6,7 +6,6 @@ import { MentalModel } from '../models-list/ModelsList';
 const Wrapper = styled.div`
   flex: 3;
   overflow-y: auto;
-  max-height: calc(100vh / 2 - 142px);
   p {
     padding-right: 10px;
     white-space: pre-wrap;
@@ -14,7 +13,6 @@ const Wrapper = styled.div`
   }
   ${({ theme }) => theme.laptop`
      margin-left:40px;
-     max-height:  calc(100vh / 2 - -119px);
   `}
 `;
 
