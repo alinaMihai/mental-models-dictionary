@@ -14,7 +14,7 @@ const List = styled.ul`
   left: 0;
   margin: 0;
   padding: 0;
-  background-color: ${props => props.theme.accentLight};
+  background-color: ${(props) => props.theme.accentLight};
   width: 100%;
   z-index: 99999;
   flex-wrap: wrap;
@@ -44,7 +44,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
- 
 `;
 
 const defaultItems = [

@@ -20,7 +20,7 @@ import { ModelView } from './components/model-view/ModelView';
 import { BookItem } from '../landing/components/book/Book';
 
 const WrapperDesktop = styled.div`
-  display: none; 
+  display: none;
   ${({ theme }) => theme.laptop`
     width: 100%;
     display: flex;
@@ -31,13 +31,13 @@ const WrapperDesktop = styled.div`
 `;
 
 const WrapperMobile = styled.div`
-   display: flex;
-   flex-direction: column;
-   max-width: 100%;
-   ${({ theme }) => theme.laptop`
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  ${({ theme }) => theme.laptop`
     display: none;
   `}
-`
+`;
 
 interface ParamTypes {
   id: string;
@@ -96,24 +96,25 @@ const MentalModelsByCategory: React.FC = () => {
     <PageContainer title={category.name}>
       {isLoading ? (
         <Spinner />
-      ) : (<>
-        <WrapperDesktop>
-          <ModelsList
-            items={models}
-            cursor={cursor}
-            onClick={handleItemClick}
-            handleMouseOver={setIsMouseOverList}
-          />
-          <ModelView item={selectedModel} />
-        </WrapperDesktop>
+      ) : (
+        <>
+          <WrapperDesktop>
+            <ModelsList
+              items={models}
+              cursor={cursor}
+              onClick={handleItemClick}
+              handleMouseOver={setIsMouseOverList}
+            />
+            <ModelView item={selectedModel} />
+          </WrapperDesktop>
 
-        <WrapperMobile>
-          {models.map((item, i) => (
-            <div key={i}>
-                <ModelView item={item}/>
-            </div>
-          ))}
-        </WrapperMobile>
+          <WrapperMobile>
+            {models.map((item, i) => (
+              <div key={i}>
+                <ModelView item={item} />
+              </div>
+            ))}
+          </WrapperMobile>
         </>
       )}
     </PageContainer>
