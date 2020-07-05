@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   flex: 3;
   overflow-y: auto;
   p {
+    flex: 3;
     padding-right: 10px;
     white-space: pre-wrap;
     line-height: 1.6;
@@ -22,10 +23,12 @@ type Props = {
 
 export const ModelView = ({ item }: Props) => {
   return !item.Model ? (
-    <p>
-      Click on one of the mental models to see details. Use up and down arrow
-      keys to navigate through the list
-    </p>
+    <Wrapper id={'modelView'}>
+      <p>
+        Click on one of the mental models to see details. Use up and down arrow
+        keys to navigate through the list
+      </p>
+    </Wrapper>
   ) : (
     <Wrapper id={'modelView'}>
       <h2>{item.Model}</h2>

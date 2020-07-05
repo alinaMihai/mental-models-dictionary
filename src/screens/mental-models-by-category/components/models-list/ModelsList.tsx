@@ -16,7 +16,7 @@ const List = styled.ul`
   margin-left: 0;
   padding-left: 0;
   ${({ theme }) => theme.laptop`
-     max-height:  calc(100vh - -26px);
+     max-height:  calc(100vh / 2 - -26px);
      width: 300px;
   `}
 `;
