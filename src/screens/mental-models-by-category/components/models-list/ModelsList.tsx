@@ -27,7 +27,6 @@ const Item = styled.li<{ active: boolean }>`
   border-bottom: ${(props) => `1px solid ${props.theme.primaryColor}`};
   margin-right: 0;
   button {
-    background-color: white;
     text-align: left;
     border: none;
     line-height: 1.4;
@@ -39,7 +38,7 @@ const Item = styled.li<{ active: boolean }>`
     font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
     word-break: break-word;
     background-color: ${(props) =>
-      props.active ? props.theme.accentLight : 'none'};
+      props.active ? props.theme.accentLight : 'white'};
   }
   button:hover {
     color: ${(props) => props.theme.primaryColor};

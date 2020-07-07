@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
+import boxes from 'assets/icons/boxes.svg';
+import bulb from 'assets/icons/bulb-light.svg';
+import home from 'assets/icons/home.svg';
+import info from 'assets/icons/info-circle-line.svg';
+
+const icons = [home, boxes, bulb, info];
 
 interface ItemProps {
   readonly isActive: boolean;
@@ -20,6 +26,9 @@ const List = styled.ul`
   flex-wrap: wrap;
 `;
 const Item = styled.li<ItemProps>`
+  .name {
+    display: none;
+  }
   a {
     text-decoration: ${(props) => (props.isActive ? 'underline' : 'none')};
     color: ${(props) =>
@@ -27,13 +36,32 @@ const Item = styled.li<ItemProps>`
     text-align: center;
     display: inline-block;
     width: 100%;
-    padding: 20px;
+    padding: 20px 25px;
     font-weight: ${(props) => (props.isActive ? 'bold' : 'normal')};
   }
   a:hover {
     color: ${({ theme }) => theme.primaryColor};
     text-decoration: underline;
   }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  ${({ theme }) => theme.laptop`
+    a {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .name{
+      display: block;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  `}
 `;
 
 const ItemWrapper = ({ active, children }) => (
@@ -47,10 +75,10 @@ const Wrapper = styled.div`
 `;
 
 const defaultItems = [
-  { name: 'Home', path: '/landing' },
-  { name: 'Top Mental Models', path: '/top-models' },
-  { name: 'More Resources', path: '/more-resources' },
-  { name: 'About', path: '/about' },
+  { name: 'Home', path: '/landing', icon: icons[0] },
+  { name: 'Top Mental Models', path: '/top-models', icon: icons[1] },
+  { name: 'More Resources', path: '/more-resources', icon: icons[2] },
+  { name: 'About', path: '/about', icon: icons[3] },
 ];
 
 export const SideMenu = ({ items = defaultItems }) => {
@@ -60,7 +88,10 @@ export const SideMenu = ({ items = defaultItems }) => {
       <List>
         {items.map((item, key) => (
           <ItemWrapper key={key} active={location.pathname === item.path}>
-            <Link to={item.path}>{item.name}</Link>
+            <Link to={item.path}>
+              <img src={item.icon} alt={item.name} title={item.name} />{' '}
+              <span className="name">{item.name}</span>
+            </Link>
           </ItemWrapper>
         ))}
       </List>
