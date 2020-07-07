@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { lighten } from 'polished';
 
 const Wrapper = styled.div`
   padding: 10px;
@@ -16,29 +17,34 @@ const List = styled.ul`
   margin-left: 0;
   padding-left: 0;
   ${({ theme }) => theme.laptop`
-     max-height:  calc(100vh / 2 - -26px);
+     max-height: calc(100vh / 2 - 15px);
      width: 300px;
   `}
 `;
 
 const Item = styled.li<{ active: boolean }>`
-  padding: 10px 0;
-  border-bottom: ${(props) => `1px dashed ${props.theme.primaryColor}`};
-  margin-right: 16px;
+  padding: 0;
+  border-bottom: ${(props) => `1px solid ${props.theme.primaryColor}`};
+  margin-right: 0;
   button {
     background-color: white;
     text-align: left;
     border: none;
     line-height: 1.4;
+    width: 100%;
+    padding: 10px;
     cursor: pointer;
     color: ${(props) =>
       props.active ? props.theme.primaryColor : props.theme.textColor};
     font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
     word-break: break-word;
+    background-color: ${(props) =>
+      props.active ? props.theme.accentLight : 'none'};
   }
   button:hover {
     color: ${(props) => props.theme.primaryColor};
     font-weight: bold;
+    background-color: ${(props) => lighten(0.2, props.theme.accentLight)};
   }
 `;
 export interface MentalModel {
