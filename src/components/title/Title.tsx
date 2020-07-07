@@ -9,10 +9,9 @@ export const Title = styled.h1`
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 0;
-  margin-top: 30px;
+  margin-top: 40px;
   ${({ theme }) => theme.laptop`
     font-size: ${typeScale.header1};
-    margin-top: 0px;
     padding: 0;
   `}
 `;

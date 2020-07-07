@@ -13,7 +13,9 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 355px;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   ${({ theme }) => theme.laptop`
     padding: 0;
   `}

@@ -9,6 +9,9 @@ const Wrapper = styled.div`
   .emptyMessage {
     margin-top: calc(50% / 2.5 + 10px);
   }
+  h2 {
+    margin-top: 30px;
+  }
   p {
     flex: 3;
     padding-right: 10px;
@@ -39,7 +42,7 @@ export const ModelViewDesktop = ({ item }: Props) => {
   ) : (
     <Wrapper id={'modelView'}>
       <h2>{item.Model}</h2>
-      <div>
+      <div className="content">
         <p>{item.Description}</p>
         <Linkify
           componentDecorator={(decoratedHred, decoratedText, key) => (

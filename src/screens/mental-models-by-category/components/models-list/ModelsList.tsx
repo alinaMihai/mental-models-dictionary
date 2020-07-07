@@ -4,8 +4,10 @@ import { lighten } from 'polished';
 
 const Wrapper = styled.div`
   padding: 10px;
-  margin-right: 10px;
-  flex: 1;
+  margin: 0 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   ${({ theme }) => theme.laptop`
       width: 300px;
   `}

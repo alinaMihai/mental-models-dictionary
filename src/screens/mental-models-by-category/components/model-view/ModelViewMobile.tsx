@@ -37,9 +37,12 @@ const Wrapper = styled.div`
   }
   h2 {
     display: flex;
+    align-items: center;
   }
   h2 span {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     line-height: 1.4;
   }
   ${({ theme }) => theme.laptop`

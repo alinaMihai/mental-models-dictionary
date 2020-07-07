@@ -19,7 +19,9 @@ const Row = styled.ul`
   padding-left: 0;
   justify-content: center;
   > li {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
   }
   &:last-child {
     align-self: flex-start;

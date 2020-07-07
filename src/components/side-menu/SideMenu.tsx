@@ -28,6 +28,7 @@ const List = styled.ul`
 const Item = styled.li<ItemProps>`
   .name {
     display: none;
+    font-size: ${(props) => props.theme.paragraph};
   }
   a {
     text-decoration: ${(props) => (props.isActive ? 'underline' : 'none')};
