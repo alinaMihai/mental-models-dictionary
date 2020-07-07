@@ -54,7 +54,7 @@ export const ModelViewMobile = ({ item }: Props) => {
     } else {
       setShowContent(true);
     }
-  }, [screenSize]);
+  }, []);
 
   const toggleContent = () => {
     setShowContent(!showContent);
