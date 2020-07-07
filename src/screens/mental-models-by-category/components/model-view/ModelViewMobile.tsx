@@ -8,7 +8,7 @@ import { useWindowSize, sizes } from 'helpers';
 
 const Wrapper = styled.div`
   flex: 3;
-  overflow-y: auto;
+  overflow: none;
   padding: 0 15px;
   p {
     flex: 3;
