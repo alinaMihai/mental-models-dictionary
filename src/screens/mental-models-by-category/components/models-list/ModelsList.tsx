@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   flex-shrink: 1;
   flex-basis: 0%;
   ${({ theme }) => theme.laptop`
-      width: 300px;
+      width: 340px;
   `}
 `;
 
@@ -20,7 +20,7 @@ const List = styled.ul`
   padding-left: 0;
   ${({ theme }) => theme.laptop`
      max-height: calc(100vh / 2 - 15px);
-     width: 300px;
+     width: 340px;
   `}
 `;
 
@@ -41,6 +41,7 @@ const Item = styled.li<{ active: boolean }>`
     word-break: break-word;
     background-color: ${(props) =>
       props.active ? props.theme.accentLight : 'white'};
+    font-size: ${(props) => props.theme.paragraph};
   }
   button:hover {
     color: ${(props) => props.theme.primaryColor};
@@ -70,7 +71,7 @@ export const ModelsList = ({
 }: Props) => {
   return (
     <Wrapper>
-      <h3>Mental Model</h3>
+      <h3>Mental Models</h3>
       <List
         onMouseOver={() => handleMouseOver(true)}
         onFocus={() => handleMouseOver(true)}

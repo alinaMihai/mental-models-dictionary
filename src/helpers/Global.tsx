@@ -24,8 +24,7 @@ main {
   margin: 0 auto;
 }
 #root {
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: 100%;
     max-height: 100vh;
     overflow: auto;

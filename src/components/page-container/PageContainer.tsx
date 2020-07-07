@@ -7,7 +7,6 @@ import { SideMenu } from '../side-menu/SideMenu';
 
 const Content = styled.div`
   padding: 10px;
-  align-self: flex-start;
   width: 100%;
   padding-top: 0;
   display: flex;
@@ -25,7 +24,6 @@ const Header = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: flex-start;
   padding: 10px;
   text-align: center;
   width: calc(100vw - 30px);
@@ -37,7 +35,6 @@ const Header = styled.header`
   `}
 `;
 const FooterWrapper = styled.div`
-  align-self: flex-end;
   width: 100%;
 `;
 const TopMenu = styled.div`
@@ -47,8 +44,7 @@ const TopMenu = styled.div`
   `}
 `;
 const PageContainerWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: block;
   height: 100%;
   & > * {
     display: flex;
