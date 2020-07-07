@@ -29,6 +29,9 @@ const Header = styled.header`
   padding-bottom: 0;
   padding-top: 0;
   margin-top: 20px;
+  ${({ theme }) => theme.laptop`
+    margin-top: 70px;
+  `}
 `;
 const FooterWrapper = styled.div`
   grid-column: 1 / 6;
@@ -36,6 +39,9 @@ const FooterWrapper = styled.div`
 `;
 const TopMenu = styled.div`
   padding: 30px;
+  ${({ theme }) => theme.laptop`
+    padding: 0;
+  `}
 `;
 const PageContainerWrapper = styled.div`
   height: 100vh;

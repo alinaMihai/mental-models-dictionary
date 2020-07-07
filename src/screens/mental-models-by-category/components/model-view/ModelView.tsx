@@ -12,6 +12,9 @@ const Wrapper = styled.div`
     white-space: pre-wrap;
     line-height: 1.6;
   }
+  .source {
+    font-style: italic;
+  }
   ${({ theme }) => theme.laptop`
      margin-left:40px;
   `}
@@ -41,7 +44,7 @@ export const ModelView = ({ item }: Props) => {
             </a>
           )}
         >
-          <p>{item.Source}</p>
+          <p className="source">{item.Source}</p>
         </Linkify>
       </div>
     </Wrapper>

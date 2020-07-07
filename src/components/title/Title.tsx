@@ -12,5 +12,7 @@ export const Title = styled.h1`
   margin-top: 60px;
   ${({ theme }) => theme.laptop`
     font-size: ${typeScale.header1};
+    margin-top: 0px;
+    padding: 0;
   `}
 `;

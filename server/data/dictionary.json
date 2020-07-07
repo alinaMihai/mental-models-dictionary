@@ -1048,31 +1048,31 @@
     },
     {
         "Category": 11,
-        "Model": "5 1 Thinking Electrons Modeling People",
+        "Model": "Thinking Electrons Modeling People",
         "Description": "\"Modeling people is tricky. Physicist Marie Gelmont once famously said, imagine how difficult physics would be. If electrons could think [laugh] so what did he mean human? What he meant was that you know if you take an electron or a carbon atom or even a water molecule it doesn't think it doesn't try to make sense of the world it doesn't have any goals or objectives or anything like that no beliefs so it's pretty straight forward to model how those things function when you look at people, people are much more complicated right? We're purposeful, we've got goals we've got objectives we've got things we want to do, we've got belief structures, we're messy. And because of that you just don't quite know how we're going to behave. Now on top of that we're diverse, right? We want different things. We have different goals and objectives. So this combination of sort of purposeful, thinking actors who are different means that it can be really hard to understand what they do and how they act. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 11,
-        "Model": "5 2 Rational Actor Models",
+        "Model": "Rational Actor Models",
         "Description": "\"The rational actor model is based on rational choice theory. The model adopts the state as the primary unit of analysis, and inter-state relations (or international relations) as the context for analysis.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 11,
-        "Model": "5 3 Behavioral Models-Model",
+        "Model": "Behavioral Models-Model",
         "Description": "\"The behavioral approach to systems theory and control theory was initiated in the late-1970s by J. C. Willems as a result of resolving inconsistencies present in classical approaches based on state-space, transfer function, and convolution representations. This approach is also motivated by the aim of obtaining a general framework for system analysis and control that respects the underlying physics.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 11,
-        "Model": "5 4 Rule Based Models",
+        "Model": "Rule Based Models",
         "Description": "\"Rule-based modeling is a modeling approach that uses a set of rules that indirectly specifies a mathematical model.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 11,
-        "Model": "5 5 When Does Behavior Matter",
+        "Model": "When Does Behavior Matter",
         "Description": "\"The rational behavior is a really good benchmark. But it's also important to included biases in our model. Think about, are there biases that would be relevant. And it's also important to think about what if we just write down a simple rule. And then if we compare these three things. Rationale behavior, bias. Right, and then simple rule. And we see, well, how much difference do we see in the outcome. If the difference is small, then we can say you can look our results seem to be sort of varied to behavior. If the difference is big, then what you gotta do is you gotta sit back and think. Okay which of these three makes the most sense. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
@@ -1263,145 +1263,145 @@
     },
     {
         "Category": 12,
-        "Model": "6 1 Introduction to Linear Models",
+        "Model": "Introduction to Linear Models",
         "Description": "\"Linear models describe a continuous response variable as a function of one or more predictor variables. They can help you understand and predict the behavior of complex systems or analyze experimental, financial, and biological data. Linear regression is a statistical method used to create a linear model.\" - MathWorks",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 12,
-        "Model": "6 2 Categorical Models",
+        "Model": "Categorical Models",
         "Description": "\"A special case of categorical modeling is logistic regression. You have to use this model when the dependent variable is ordinal. A page devoted to this problem also comes up shortly. You could also turn simple models like these around and analyze them as ANOVAs, but you shouldn't.\"- Sportsci.org",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 12,
-        "Model": "6 3 Linear Models",
+        "Model": "Linear Models",
         "Description": "\"Using the linear models, you can draw a line through data and use that line to explain some of the variation in the data. Now typically the world isn't gonna be perfectly linear. There's going to be lots of extra variation left over, but there's a question of how much of that variation did the line explain. In addition to explaining the variation, the line tells us something about the relationship between our independent variable, x and our dependent variable, y. In particular, we learn the sine on x, like does y increase in x or decrease in x, and we also learn something about the magnitude, so how much does. Each one unit increase of x increased the value of y. So what this linear model can do is help us understand something about data we see in the real world.\"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 12,
-        "Model": "6 4 Fitting Lines to Data",
+        "Model": "Fitting Lines to Data",
         "Description": "\"How do you draw the best possible line through the data? ... it's a lot of data out there. One thing you can do is you can fit that data to linear models. What linear models will do is they'll explain some percentage of the variation. Maybe a lot, maybe a little. These linear models will also tell us the sign and magnitude of coefficients. So it'll tell us whether a variable. It's got a positive effect but it's got a negative effect. And also tell a sort of how big that effect is, and that allows us to make policy choices. You know, investing in things like teacher quality as opposed to class size because they have a larger effect. This is what I call big coefficient thinking.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 12,
-        "Model": "6 5 Reading Regression Output",
+        "Model": "Reading Regression Output",
         "Description": "\"The R-squared of the regression is the fraction of the variation in your dependent variable that is accounted for (or predicted by) your independent variables. (In regression with a single independent variable, it is the same as the square of the correlation between your dependent and independent variable.)\" - Princeton University Library",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 12,
-        "Model": "6 6 From Linear to Nonlinear",
+        "Model": "From Linear to Nonlinear",
         "Description": "\"The world may be nonlinear, and we've got techniques that help us sort of understand linear functions. So here's the first thing we can do. The first thing we can do is we can just approximate our nonlinear function with a linear function so we've got this nonlinear function here right, but we're just gonna do a three linear function to approximate it. So that's the best possible approximation. And so what we can do is we can say I have a model. So in this case I may have a model that says this is my functional form, this is what should happen. \"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 12,
-        "Model": "6 7 The Big Coefficient vs The New Reality",
+        "Model": "The Big Coefficient vs The New Reality",
         "Description": "\"The big coefficient: If we have a simple linear regression model, we have some equation like Y = a1 x1 + a2 x2 + b, right? And x1 and x2 are called the independent variables, and y's the dependant variable. So, for example, Y might be sales of a product. And x1 might be advertising in magazines and x2 might be advertising in television. Now we can look at these two coefficients, a1 and a2 and figure out which one's bigger. And what that's telling us is we get sort of more bang for the buck from advertising on magazines or from advertising on television. If it's television, if a2 is bigger than a1, then that's where we spend our money. So the idea is you put your assets, you put your resources on the variables that have the bigger coefficients. So this big coefficient thinking has led to something that people like to call Evidence Based blank. So there's Evidence Based Medicine. What you do is you look at all sorts of different treatments that have been tried on patients...\"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 13,
-        "Model": "7 1 Tipping Points",
+        "Model": "Tipping Points",
         "Description": "\"The tipping point is an expression used in epidemiology that was taken by Malcolm Gladwell, a New York Times writer, and applied to other areas of life—including business—in his 2000 book “The Tipping Point”. The subtitle, “How Little Things Can Make a Big Difference”, explains more clearly what the whole thing is about.\n\nIn epidemiology the tipping point is that moment when a small change tips the balance of a system and brings about a large change; for example, when the normal spread of influenza throughout a population suddenly turns into an epidemic. In recent years the language of epidemiology has spread (like a virus?) within business. Managers talk about viral marketing (see article), the infectious enthusiasm of their teams, and “outbreaks” of corporate greed—and even, as was reported once about JetBlue, an American low-cost airline, an “outbreak of passenger abuse”. A lot of this language owes its spread to the influence of the internet, where viruses are common and where dormant information can sometimes erupt suddenly and infect us all.\" - Economics",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 13,
-        "Model": "7 2 Percolation Models",
+        "Model": "Percolation Models",
         "Description": "\"Percolation theory deals with fluid flow (or any other similar process) in random media.\n\nIf the medium is a set of regular lattice points, then there are two main types of percolation: A site percolation considers the lattice vertices as the relevant entities; a bond percolation considers the lattice edges as the relevant entities. These two models are examples of discrete percolation theory, an umbrella term used to describe any percolation model which takes place on a regular point lattice or any other discrete set, and while they're most certainly the most-studied of the discrete models, others such as AB percolation and mixed percolation do exist and are reasonably well-studied in their own right.\" - WolframWorld",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 13,
-        "Model": "7 3 Contagion Models 1 Diffusion",
+        "Model": "Contagion Models 1 Diffusion",
         "Description": "\"In the diffusion model, everybody just gets it. There's no, you know, sort of getting cured. So this thing of this is diffusion of information through a system or disease that everybody's just gonna get. Alright? So the diffusion method sorta works as follows. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 13,
-        "Model": "7 4 Contagion Models 2 SIS Model",
+        "Model": "Contagion Models 2 SIS Model",
         "Description": "\"the SIS model, for \"susceptible, infected and then susceptible\". That is, you're susceptible to some disease, then you get infected, and then after you get infected you're cured, but then you can become susceptible again if the disease is mutated in some way, like a flu virus. There's also something called the SIR model, where after you become infected then you're recovered, then there's no chance of getting the disease again. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 13,
-        "Model": "7 5 Classifying Tipping Points",
+        "Model": "Classifying Tipping Points",
         "Description": "\"There are contextual tips where the environment changes. Once the environment changes, then the system is likely to move from one state to another once somebody lights the match. There's tips within class, where you move from one equilibrium to a new equilibrium. And there's tips between class, where a sy-, where a system tips from an equilibrium to, you know, a much more complex state, or a periodic state. So that's a simple taxonomy of tipping points. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 13,
-        "Model": "7 6 Measuring Tips",
+        "Model": "Measuring Tips",
         "Description": "\"So one way to think about tipping points in the measure we're going to introduce is gonna depend on that idea. That the uncertainty goes away. Initially, there was some uncertainty. It could go left or right, but after the tip, we know where it's gonna go. So we're gonna measure tipsiness by reductions in uncertainty. So, to get there we first need a measure of uncertainty. Way to think about that is you want to think about changes in outcomes. \" -  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 14,
-        "Model": "8 1 Introduction To Growth",
+        "Model": "Introduction To Growth",
         "Description": "\"One of the surprising results of that model of economic growth is going to be that there are limits, that without innovation, growth stops. So we will move from that simple model to something called a solo growth model. The solo growth model allows for there to be innovation and shows how innovation has this sort of multiplier effect on our collective well-being and why innovation is so important. And then we'll talk a little bit about some extensions, in particular we'll talk about once we've got this model how do we use it to think about why some countries. Successful in other countries are, and really what, oh, enables. Growth to continue over time. \"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 14,
-        "Model": "8 2 Exponential Growth",
+        "Model": "Exponential Growth",
         "Description": "\"Exponential growth is exhibited when the rate of change—the change per instant or unit of time—of the value of a mathematical function is proportional to the function's current value, resulting in its value at any time being an exponential function of time, i.e., a function in which the time value is the exponent. Exponential decay occurs in the same way when the growth rate is negative. In the case of a discrete domain of definition with equal intervals, it is also called geometric growth or geometric decay, the function values forming a geometric progression. In either exponential growth or exponential decay, the ratio of the rate of change of the quantity to its current size remains constant over time.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 14,
-        "Model": "8 3 Basic Growth Model",
+        "Model": "Basic Growth Model",
         "Description": "\"if we write down a Simple Model of Growth - Economic Growth that involves investing money in new machines. That there are limits to growth. That the model is going to max out at this point, when the number of machines lost to depreciation is exactly offset by the number of machines that we invested in the previous period. If we start with no machines, growth is going to happen really really fast initially, but then it's going to fall off when it reaches this equilibrium level. So to get sustained growth, that's going to require new technologies - new innovations. And that's where we are going next. We're going to construct Solow's Growth Model which includes this Innovation Parameter. \" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 14,
-        "Model": "8 4 Solow Growth Model",
+        "Model": "Solow Growth Model",
         "Description": "\"we just took in a very simple growth model and in that growth model we saw that well, growth stopped, right. Once we got to 144 machines and an output of 120, we no longer got any growth. So we use that very simple model to get at. A really important fact, that without innovation, if technology stays fixed, growth will stop. Now, sure the labor supply could get bigger, we could have more workers or something like that. But holding the amount of labor fixed and holding that technology fixed, if we've got a fixed savings rate, and a fixed rate of depreciation, there's no more growth at some point. We're gonna go up, up, up, up, up, and then stop. Well. That hasn't been human experience right.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 14,
-        "Model": "8 5 WIll China Continue to Grow",
+        "Model": "WIll China Continue to Grow",
         "Description": "\"One type of growth, what we're seeing in China now and what we saw in Japan post war. And what we saw in Europe and the United States post war, is growth that occurs through capital accumulation. Another type of growth, is what we're, which is what we see in the United States and Japan and Europe now, but not in China, occurs from technological advances, not from buildup of capital. And as you advance technology and you increase that A term, then it makes sense to. Buy more capital, but different types of capital and that's what drives growth. \" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 14,
-        "Model": "8 6 Why Do Some Countries Not Grow",
+        "Model": "Why Do Some Countries Not Grow",
         "Description": "\"We also learned that absent innovation growth tails off right it just stops, so we needs a constant driver of innovation. And, the we also saw [inaudible] in this last lecture that's not so easy. It'd be easy to say that all we need is innovation, well to maintain that innovation you need secure property rights. You need people who have incentives to invest in things like machines and also invest in new technologies. And so to get that you need a strong central government. But the central government can be so strong that it starts extracting stuff. But if it extracts stuff, that is essentially the same effect as lowering the technology. And at the third, and third, that government can't necessarily protect industry. Now sometimes it can. There's cases where it's gonna make sense to protect industries, but. One of the things that's going to drive growth to innovation is this process of creative destruction. So the model tells us that sometimes, we may have to, you know throw out our vinyl records and move to cassettes, and then throw out those cassettes and move to c.d.'s, and then throw out those c.d.'s and you just listen to digital music. There's going to be these processes of creative destruction that drive the growth and they're representative of innovation, of what makes us all better off. Okay. Thank you.\"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 15,
-        "Model": "9 1 Problem Solving and Innovation",
+        "Model": "Problem Solving and Innovation",
         "Description": "\" The big idea is this: I have some solution from one problem, you have a solution from a different problem, and sometimes I can take your solution and combine it with my solution, and come up with something even better. So, the thing about sophisticated products— like a house, an automobile, or even a computer— that consists of all sorts of solutions to sub-problems. And we are going to see how by recombining solutions to sub-problems we get ever better solutions, and that is really a big driver of innovation. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 15,
-        "Model": "9 2 Perspectives and Innovation",
+        "Model": "Perspectives and Innovation",
         "Description": "\"hat a perspective is going to be is it’s going to be a representation of all possible solutions. So it’s some encoding of the set of possible solutions to the problem. Once we have that encoding of the set of possible solutions, then we can create our landscape by just assigning a value to each one of those solutions. And that will give us a landscape picture like you saw before. Now most of us are familiar with perspectives, even though we don’t know it. Let me give some examples. Remember when we took seventh grade math? We learned about how to represent a point, how to plot points. And we typically learned two ways to do it. The first way was Cartesian coordinates. So given a point, we would represent it by and an X and a Y value in space. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 15,
-        "Model": "9 3 Heuristics-Model Thinking",
+        "Model": "Heuristics-Model Thinking",
         "Description": "\"A heuristic technique (/hjuːˈrɪstɪk/; Ancient Greek: εὑρίσκω, \"find\" or \"discover\"), often called simply a heuristic, is any approach to problem solving, learning, or discovery that employs a practical method not guaranteed to be optimal or perfect, but sufficient for the immediate goals. Where finding an optimal solution is impossible or impractical, heuristic methods can be used to speed up the process of finding a satisfactory solution. Heuristics can be mental shortcuts that ease the cognitive load of making a decision. Examples of this method include using a rule of thumb, an educated guess, an intuitive judgment, guesstimate, stereotyping, profiling, or common sense.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 15,
-        "Model": "9 4 Teams and Problem Solving",
+        "Model": "Teams and Problem Solving",
         "Description": "\"The team can only get stuck at a solution that's a local optima for everyone on the team. That means the team has to be better than the people in it. So what we want, right, you want people with different local optima. You want people to get stuck in different places. Well how do we get it? We don't. We've already looked at this twice, right? We looked at it first perspective perspectives. So if you coat it this way and I coat it this way, then we're going to get stuck in different places. We also want people with different heuristics. If I look in this direction and this direction, and you look in this direction and this direction, and we add us together, we look in all four of those directions. So what we want, is we want diverse perspectives, and we want diverse heuristics. And that diversity will give us different local optima, and those different local optima will mean that we take the intersections, and we end up with better points. That's sort of the big idea.\"",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 15,
-        "Model": "9 5 Recombination",
+        "Model": "Recombination",
         "Description": "\"Recombination is incredibly powerful and if we have a few solutions. Or futuristic. We can combine those to create evermore and that may be the real driving force behind innovation in the economy, is that when we come up with a solution we can then recombine it with all sorts of other solutions and that leads to ever and ever more innovation.\" -  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
@@ -1471,97 +1471,97 @@
     },
     {
         "Category": 16,
-        "Model": "10 - 1 - Markov Models",
+        "Model": "Markov Models",
         "Description": "\"In probability theory, a Markov model is a stochastic model used to model randomly changing systems.[1] It is assumed that future states depend only on the current state, not on the events that occurred before it (that is, it assumes the Markov property). Generally, this assumption enables reasoning and computation with the model that would otherwise be intractable. For this reason, in the fields of predictive modelling and probabilistic forecasting, it is desirable for a given model to exhibit the Markov property.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 16,
-        "Model": "10 - 2 - A Simple Markov Model",
+        "Model": "A Simple Markov Model",
         "Description": "\"For example, in the case of the alert and bored students.  People are moving from alert to bored. But if I think in terms of probabilities, that probability is staying fixed. That probability is staying fixed at 5/9. People are moving around, but the probability's staying fixed. That's why this is sometimes called a statistical equilibrium, 'cause the statistic p, the probability of someone being alert, is the thing that doesn't change. Okay, pretty involved, right? What we did is, we wrote down the Markov transition matrix. And we showed how using that matrix, we could solve for an equilibrium. And we saw, at least in the simple example of alert and bored students, that the process went to an equilibrium, and it was fairly straightforward to solve for. What we want to do next is we want to do [a] slightly more sophisticated model that involves multiple states instead of just two, involves three states, and we'll see how that process also converges to an equilibrium. \" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 16,
-        "Model": "10 - 3 - Markov Model of Democratization",
+        "Model": "Markov Model of Democratization",
         "Description": "\"To explain this model its' best to give the example of countries. Countries that can be free, partly free or run by dictators (not free).\nStart from a 2 state democracy model -> 5% of democracies switch to dictatorship and 20% the opposite. Trend towards freedom, but only 2/3 will be free unless the transition probabilities change. You can get a line\nchart or a bar chart to compare model and actual, and they are very similar! And line chart patterns look very\nsimilar!!\" - Model Thinking Section 10: Markov Models",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 16,
-        "Model": "10 - 4 - Markov Convergence Theorem",
+        "Model": "Markov Convergence Theorem",
         "Description": "\" Markov convergence theorem that says the process is going to go to a unique equilibrium. If you rule out simple cycles, and just assume finite states, fixed probabilities, can get from any state to any other, then you get an equilibrium. So this is the Markov convergence theorem. \"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 16,
-        "Model": "10 - 5 - Exapting the Markov Model",
+        "Model": "Exapting the Markov Model",
         "Description": "\"Markov process is a fixed set of states, fixed transition probabilities. You can get from any one state to any other, and then you get an equilbrium. So that equilibrium doesn't depend on where you start, it doesn't depend on interventions. And it doesn't depend on history in any way. The model is really powerful. And so if you wanna argue history matters. Or if you wanna argue interventions matter. If someone gonna argue that this isn't a transition, that this isn't a Markov process. Or that you've gotta argue that you're changing the transition probabilities. Now that isn't impossible. \"",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 17,
-        "Model": "11 - 1 - Lyapunov Functions",
+        "Model": "Lyapunov Functions",
         "Description": "\"In the theory of ordinary differential equations (ODEs), Lyapunov functions are scalar functions that may be used to prove the stability of an equilibrium of an ODE. Named after the Russian mathematician Aleksandr Mikhailovich Lyapunov, Lyapunov functions (also called the Lyapunov’s second method for stability) are important to stability theory of dynamical systems and control theory. A similar concept appears in the theory of general state space Markov chains, usually under the name Foster–Lyapunov functions.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 17,
-        "Model": "11 - 2 - The Organization of Cities",
+        "Model": "The Organization of Cities",
         "Description": "\"Simple model is, there's a min, if the process moves, it goes down by some amount each time, therefore the process has to stop. We use that model to say, let's think about how a city organizes itself. \" -Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 17,
-        "Model": "11 - 3 - Exchange Economies and Externalities",
+        "Model": "Exchange Economies and Externalities",
         "Description": "\"We've got that, without externalities, or with only positive externalities in the case of finding a maximum, what you're gonna get is that, it's easy to construct a Lyapunov function, and boom, you get there. The system's gonna stop. But if there's these negative externalities, I'm making myself happier but I'm gonna make other people less happy, then the system could continue to churn, and we may not be able to say whether or not the system's gonna go to equilibrium or whether it's gonna be complex. But we do have some intuitions. And those intuitions suggest that markets, simple markets trading goods should go to equilibrium, should constantly improve. People choosing routes should constantly improve. But things like international alliances or coalitions within political parties, or possibly even dating, that these things may be more complex, and certainly that's how it appears out there in the real world.\"-Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 17,
-        "Model": "11 - 4 - Time to Convergence and Optimality",
+        "Model": "Time to Convergence and Optimality",
         "Description": "\"What we learn is that it's at least possible to put a Lyapunov function on a process and have it stop at somewhere less than the optimal point. Doesn't have to stop at the optimal point, it could stop below. That's what we're seeing here. So we've answered two important questions. The first one is: Okay, we know it goes to equilibrium, can we say how fast? And the answer is yes. And the better bound we get on k, and the better bound we get on the max, the more accurately we can put a restriction on how fast, how long it's going take. So, we can put a tighter bound on how long it's going to take, if we can estimate k accurately, and if we can estimate the maximum value accurately. We also learned that it can stop a lot faster than that, because of the fact that the process may not get to that optimum value.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 17,
-        "Model": "11 - 5 - Lyapunov_ Fun and Deep",
+        "Model": "Lyapunov_ Fun and Deep",
         "Description": "\"when you think about a model, when you think about a process like the Lyapunov process, right? Lyapunov functions. What you've got is, you can say, hey, there some cases like the case of chairs, a pure exchange market, this thing works great. And we can just can say, boom, it's gonna stop, we're fine. There's other things like the office process, that unless you know a lot about the nature of the externalities, you can't tell. It could be, oh yeah this thing's gonna go right to equilibrium. Or it could be that, whoa it's gonna churn a long time. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 17,
-        "Model": "11 - 6 - Lyapunov or Markov",
+        "Model": "Lyapunov or Markov",
         "Description": "\"By looking at Lyapunov functions and comparing it to some of our other models, like Markov processes and the Langton model, we begin to see how having multiple models in our heads enables us to understand some of the richness we see out there in the world, and actually have deeper understandings of the processes we see. To understand, like, this process is going into equilibrium because it's a Markov process, and it's a stochastic equilibrium. And this process, an exchange market, is going to equilibrium because of the fact that it's a Lyapunov function and happiness is going up. So what you get is different processes in that equilibrium for very different reasons. And having different tools for understanding why equilibrium exists is [a] very useful thing for making sense of the world.\"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 18,
-        "Model": "12 - 1 - Coordination and Culture",
+        "Model": "Coordination and Culture",
         "Description": "\"What do we mean by culture? Well, typically when you think about culture, you mean differences between countries, differences between groups of interacting people. So people from Japan act differently than people from Germany, and people from Germany act and believe and behave differently than people from El Salvador. So think about just differences between countries. Now in order to, for there to be differences Between the people within a country or nation state or even a small group, there have to be similarities within. So it means that there have to be similar actions within a group. And that's where the coordination game is gonna enter. And in addition, when we think about cultural behavior, we think of it being \"interesting\". I mean, interesting sort of, [inaudible] what I mean is, is that it can be suboptimal in a way. It can be, if you sat down and efficiently said, what should these people be doing? Maybe what we're doing doesn't make sense. And that'll be true of people from every nation or group. We say, look at the behavior and think, that seems different than how I would do it, or different than what seems maybe the most efficient way to do it. So by culture behavior, we're gonna mean behavior as well that maybe doesn't look optimal from an outsider's perspective, but possibly viewed within that culture, it makes a lot of sense. \" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 18,
-        "Model": "12 - 2 - What Is Culture And Why Do We Care",
+        "Model": "What Is Culture And Why Do We Care",
         "Description": "\" The reason we care about culture, and here's a quote from Ken Arrow, who's a Nobel Prize winning economist, is when you think about how the economy works, how political systems work, how society works, it's all mediated through these social exchanges, so as Arrow says in this quote, that a lot of economic backwardness can be explained by lack of mutual confidence, so lack of trust. So one of the things that we've seen in cultures is different levels of trust. And different levels of trust have huge implications for how well political, economic, social, and religious institutions are gonna perform in terms of meeting the needs of the citizens.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 18,
-        "Model": "12 - 3 - Pure Coordination Game",
+        "Model": "Pure Coordination Game",
         "Description": "\"Pure coordination games - games in which players\nhave identical preferences over the set of possible outcomes. Focal points, even\nwhen they arise as framing effects based on the labelling of options, are intuitively\nobvious choices, and experimental evidence shows that decision makers often\ncoordinate successfully by choosing them. \" - Journal of Economics Strategy",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 18,
-        "Model": "12 - 4 - Emergence of Culture",
+        "Model": "Emergence of Culture",
         "Description": "\"what Axelrod's model gives us, which is really sort of fascinating, is, he makes this assumption that says: We've all got these traits. We look to our neighbors. If they're like us, we tend to interact with them. If they're not like us, we tend not to. And what he ends up getting is these distinct cultures with thick boundaries. And these thick boundaries means vast differences between the cultures. Now the thick boundaries emerge because of the fact that if there weren't a thick boundary, then what would happen is, I would interact with that person and would become more similar, and the boundary would disappear. So Axelrod's model shows how in a social space, we can get distinct cultures on multi dimensions, and those boundaries can be self-reinforcing. People don't interact across the boundaries, and the cultures remain disparate. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 18,
-        "Model": "12 - 5 - Coordination and Consistency",
+        "Model": "Coordination and Consistency",
         "Description": "\"There's two people, they meet, they each have this vector of actions or beliefs or attitudes, whatever you want to call them. And when the leader and follower meet, they look at the second dimension, let's say the follower says, well you're a three, I'm a one, I'll switch that to a three. That's what coordination is, you switch your action. You put the ketchup where your friends put the ketchup. What would consistency be? Well, consistency would just be this: you look at yourself, now these values, 5, 3, 1, 4, have meaning. Five is close to five, four is close to four. And you look and you think, I'm five on the first, I'm one on the second. And that doesn't make any sense, so you switch and become five on both. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
@@ -1595,223 +1595,223 @@
     },
     {
         "Category": 19,
-        "Model": "13 - 1 - Path Dependence",
+        "Model": "Path Dependence",
         "Description": "\"Path dependence is the idea that decisions we are faced with depend on past knowledge trajectory and decisions made, and are thus limited by the current competence base. In other words, history matters for current decision-making situations and has a strong influence on strategic planning.\"  -Financial Times",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 19,
-        "Model": "13 - 2 - Urn Models",
+        "Model": "Urn Models",
         "Description": "\"An urn model is either a set of probabilities that describe events within an urn problem, or it is a probability distribution, or a family of such distributions, of random variables associated with urn problems.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 19,
-        "Model": "13 - 3 - Mathematics on Urn Models",
+        "Model": "Mathematics on Urn Models",
         "Description": "\"One of the simplest models in probability theory. A description of an urn model is as follows: Consider some vessel — an urn — with black and white balls. One ball is drawn at random from the urn, and then it is returned to the urn together with cc balls of the same colour as the ball drawn and dd balls of the other colour. After mixing the balls in the urn, the procedure is repeated a certain number of times. It is assumed that initially the urn contains a>0a>0 white and b>0b>0 black balls. The numbers cc and dd, the parameters of the urn model, may also be negative.\"  - Encycopedia of Mathmatics",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 19,
-        "Model": "13 - 4 - Path Dependence and Chaos",
+        "Model": "Path Dependence and Chaos",
         "Description": "\" when we talk about path dependence, what we're talking about is the sequence of previous events influencing not only outcome in this period, but possibly the long run equilibrium. So our definition of path dependence is that the outcome probabilities depend on the sequences of past outcomes. So in the case of a path dependent outcome where you see even the outcome depends on it.\"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 19,
-        "Model": "13 - 5 - Path Dependence and Increasing Returns",
+        "Model": "Path Dependence and Increasing Returns",
         "Description": "\"We said that one thing that people often equate with path dependence is increasing returns and we've shown that although maybe empirically the case that a lot of path dependence does come from increasing returns, logically they're completely separate. You can have path dependence without increasing returns, you can have increasing returns and not get path dependence. We also talked about how one big cause of path dependence may be externalities. Inner dependencies between choices, especially big choices like public projects, and those externalities, whether they're positive or negative. Can create that dependence. But the negative [inaudible] may have a larger effect. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 19,
-        "Model": "13 - 6 - Path Dependent or Tipping Point",
+        "Model": "Path Dependent or Tipping Point",
         "Description": "\"A tipping point was a single instance in time where, where that long, long equilibrium was gonna be suddenly changed drastically. So think about path depended. Path dependent means what happens along the way. As you move along that path, how does that effect where we're likely to end up. So each step may have a small effect, but it's the accumulation of those steps that has the difference. With tipping points, everything sort of moves along in expected ways but not getting a lot of information. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 20,
-        "Model": "14 - 1 - Networks",
+        "Model": "Networks",
         "Description": "\" One is, the internet has allowed us to make all sorts of network connections with people, and to give us graphs of those networks. We're just more aware that networks exist. Another thing is that we get more and more data on networks. We're getting to see the importance of networks for all sorts of things, Whether it's scientific innovation, whether it's the spread of ideas, Whether it's the polarization of critical thought, And whether it's the rise of. With a decrease in smoking with a rise in social trends, You can see these effects through networks using new techniques. What we want to do in this set of lectures is understand a little bit about how networks work and why they're so important. So first thing I just want to convince you the networks have become a hot topic. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 20,
-        "Model": "14 - 2 - The Structure of Networks",
+        "Model": "The Structure of Networks",
         "Description": "\"We can think of networks as having nodes, edges, degrees, path length, and connected in a cluster coefficient. So this is a language for describing different network structures....When you look at the graphs or network, there's structure to graphs. We could measure degree which is on average how many nodes is another node connected to. We could talk about path length, which is how far is it from one node to another node. We could talk about connectedness, is the whole graph connected. And we can talk about clustering coefficient, which is how many triangles, of the possible triangles, how many of those are filled in. Now these are statistical measures.\"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 20,
-        "Model": "14 - 3 - The Logic of Network Formation",
+        "Model": "The Logic of Network Formation",
         "Description": "\" The network structure's gonna be something that emerges through these micro-level interactions.The first one's gonna be random connections, where each node and randomly decided to connect to other nodes. The second one is gonna be a small worlds model. And the is, is gonna work as follows. Each person is gonna have some friends that are, sort of, belong to a clique. They're sort of nearby. And then some friends that are random, that they randomly connect to. So we're gonna start out by having people connected to just people near them. And then assume that they sort of rewire, in a way, and randomly connect to some people who are further away in social space. ?Cause this is what a lot of social networks look like. And the last thing we're gonna do is we're gonna look at something called a preferential attachment network. And this has been used to describe the internet. And the world wide web. And the idea here is the following. It's that you're more likely to connect to nodes that are more connected. So, that's true certainly in the world wide web.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 20,
-        "Model": "14 - 4 - Network Function",
+        "Model": "Network Function",
         "Description": "\"What are the functionalities of this sort of network? Look, here's an interesting functionality. Suppose I think about random node failures. So suppose nodes on the internet are gonna fail randomly. Well most nodes are connected to very few. Most nodes are over here. So that means if you have random failure, this node is gonna be incredibly robust. So no one said, hey, let's. Make connections in such a way that makes the internet robust, but the fact that it emerges from the structure of the network. What about targeted failures? What if you want to shut down internet? What if you want to target failure, then you go after these, lots and lots of connections. So although the internet is really robust in handling failure but it's not at all robust to targeted failure. That's a functionality that emerges from the preferential [inaudible] rule. Nobody built them in. They just happened. So what have we learned? We learned that it's sort of fun to talk about networks. There's pictures but we can really unpack it in a formal way by constructing models and networks. Cause models and networks can focus on the logic. How does the network form. The structure. What are the statistical properties within networks? And then finally the functionality. What does the network do? Right. Does the network robust to random failures or is it robust to strategic failures? Does it give us six degrees of separation or 400 degrees of separation? Is it connected or non-connected? So there's all these functionalities that emerge from the network structure. And the network structure in turn is a result of. The individual logic for how people make connections, or how firms make connections, or how. \" -  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 21,
-        "Model": "15 - 1 - Randomness and Random Walk Models",
+        "Model": "Randomness and Random Walk Models",
         "Description": "\"A random walk is a mathematical object, known as a stochastic or random process, that describes a path that consists of a succession of random steps on some mathematical space such as the integers. An elementary example of a random walk is the random walk on the integer number line, {\\displaystyle \\mathbb {Z} } \\mathbb {Z} , which starts at 0 and at each step moves +1 or −1 with equal probability. Other examples include the path traced by a molecule as it travels in a liquid or a gas, the search path of a foraging animal, the price of a fluctuating stock and the financial status of a gambler can all be approximated by random walk models, even though they may not be truly random in reality. As illustrated by those examples, random walks have applications to many scientific fields including ecology, psychology, computer science, physics, chemistry, biology as well as economics. Random walks explain the observed behaviors of many processes in these fields, and thus serve as a fundamental model for the recorded stochastic activity. As a more mathematical application, the value of pi can be approximated by the usage of random walk in agent-based modelling environment.[1][2] The term random walk was first introduced by Karl Pearson in 1905.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 21,
-        "Model": "15 - 2 - Sources of Randomness",
+        "Model": "Sources of Randomness",
         "Description": "\"If I'm writing a model of people, I don't wanna say, I know what these people are gonna do. Instead, I might say, well, you know, they're probably gonna do this, but who knows. You know, they're people. They're crazy. They might do anything. So we put in a little bit of an error term, All sorts of reasons why things may not go as we expect. There can be noise, there can be error, there can be capriciousness, there can be uncertainty, there can be complexity in the underlying process. So when we think about these models, these random models that we're gonna study, there's all sorts of things that can come into play to make the outcome not be what we expect, but to include little error term.\" -  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 21,
-        "Model": "15 - 3 - Skill and Luck",
+        "Model": "Skill and Luck",
         "Description": "\"In some cases you can think of outcomes as being combinations of skill and luck, and you can determine how much skill and how much luck by looking at variations in outcomes. Is there a lot of flipping, or is there sort of consistent winners? We also then got from this very simple model, a paradoxical result. And a paradoxical result is, is that when you get all high skill people competing against one another, even when it's a low luck environment, luck will play a large role because of the paradoxical skill. Alright, so that's a luck and skill model, now we're going to move on to a model of random walks. \"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 21,
-        "Model": "15 - 4 - Random Walks",
+        "Model": "Random Walks",
         "Description": "\"We can often think of. An outcome is being a sequence of random events. And if an outcome of sequence of random events, what we're gonna expect to see, is we're gonna expect to see an expect value of zero. But we're gonna see some big winners and some big losers. And we can't then necessarily infer just because someone?s been successful in the past, But fairly successful in the future. So we start with two random walkers and one who happened to go up and one who happen to goes down, and then we think, right, who in heaven's sake are we gonna place our bets on. Well, this one's just as likely to go down as this one is to go up. You don't know anything. So what we really want try and figure out in these situations is, is something a random walk? Or is it not? Is there some reason to believe that there is, that this person's going up for a reason. And this person's going down for a reason, or is the data consistent with things being purely random? And if it is, we should expect some regression in the mean, we should expect the two of them to perform about the same. \"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 21,
-        "Model": "15 - 5 - Random Walks and Wall Street",
+        "Model": "Random Walks and Wall Street",
         "Description": "\"A Random Walk Down Wall Street, written by Burton Gordon Malkiel, a Princeton economist, is an influential book on the subject of stock markets which popularized the random walk hypothesis. Malkiel argues that asset prices typically exhibit signs of random walk and that one cannot consistently outperform market averages. The book is frequently cited by those in favor of the efficient-market hypothesis. As of 2015, there have been eleven editions and over 1.5 million copies sold.\"-  Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 21,
-        "Model": "15 - 6 - FInite Memory Random Walks",
+        "Model": "FInite Memory Random Walks",
         "Description": "\"Here's the idea. The idea is that our random walk model your value depended on every single shock. All the way through, in a finite memory random walk, your value only depends on the previous five shocks, the previous seven shocks. Let me show you. So, the value of something at time T instead of being all of the shocks, instead of starting at zero, and adding all that up to T just includes the previous five periods. So you think of there being a window like this and that window slides along over time. As time passes, you sort of just take the last five things that have occurred.\"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 22,
-        "Model": "16 - 1 - Colonel Blotto Game",
+        "Model": "Colonel Blotto Game",
         "Description": "\"A Blotto game, Colonel Blotto game, or divide-a-dollar game is a type of two-person zero-sum game in which the players are tasked to simultaneously distribute limited resources over several objects (or battlefields). In the classic version of the game, the player devoting the most resources to a battlefield wins that battlefield, and the gain (or payoff) is then equal to the total number of battlefields won.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 22,
-        "Model": "16 - 2 - Blotto_ No Best Strategy",
+        "Model": "Blotto_ No Best Strategy",
         "Description": "\"If you're playing a mixed strategy, If you're playing a equilibrium strategy, then there isn't any strategic ability. We can just cross this out and it's all just going to come down to luck. So against really smart players, Blotto may end up equal numbers of troops, Blotto's probably luck. We have maybe one player who is smarter than the other, or one player with more troops than the other. Then Blotto starts becoming more skilled. But again, the interesting thing about Blotto. Anything can be beaten. You don't need all your troops, and it really comes down to, Where is that other person gonna put their troops. So, what you want to do is not be understood. You want to be confusing to the other person so you want to random off. So, it's an interesting g ame. Alright so, that's the basic Blotto. Where we're gonna go next is we're going to think a little bit more deeply about this idea of one side having an advantage and see what that means for the nature of competition. We're also gonna talk about why Blotto has become interesting again.\"-  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 22,
-        "Model": "16 - 3 - Applications of Colonel Blotto",
+        "Model": "Applications of Colonel Blotto",
         "Description": "\"We've learned that Blotto, which was developed for warfare for putting troops on fronts, applies to a whole bunch of different stuff. It applies for the Electoral College, to terrorism, to trials, to sports, even hiring decisions. And we can get insights from Blotto to all those different environments. We've already seen from Blotto that any position can be beaten by somebody else. We've also seen that you don't need all your troops to win. What we're gonna do in the next lecture is see how much of an advantage it is to really have more troops. And what you should do. So, if you're at a disadvantage, if you don't have all those troops. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 22,
-        "Model": "16 - 4 - Blotto_ Troop Advantages",
+        "Model": "Blotto_ Troop Advantages",
         "Description": "\"The advantage of being stronger really depends on there being, you know, not as many fronts for over the troops. And then, we've seen if we go to a Multiplayer Blotto game, that we're likely to get cycles where one player beats two, two beats three, and then three can beat one or something like that, so we get these interesting cycles. We don't get sort of a consistent winner. So what Blotto does, if we have a situation, a competitive situation that looks like Blotto, we have some understanding of what the structure of winners should look like, and that's different than what we've seen in our other models.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 22,
-        "Model": "16 - 5 - Blotto and Competition",
+        "Model": "Blotto and Competition",
         "Description": "\"There's a sense in which the winner of the presidential election is luck, because it comes down to economic shocks going their way. And at the other extent, we ca n also say, look, another way to think about these presidential elections, though, is it's this elaborate game of blotto. They're each trying to figure out where to allocate their resources, where to spend their time, where to spend their money, trying to convince voters, And except not only electoral college, but to win different factions of voters. Cuz you can also make a Blotto game playing out on factions of voters. What you get from those two lenses, and of course the other two lenses, is just a much richer understanding of the nature of political competition. It's gonna make you better able to predict what's gonna happen, also better understand what's going on and better able to think about how do you design institutions to pick a president. Again, which is one of the things we wanna do modeling for.\"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 23,
-        "Model": "17 - 1 - Intro_ The Prisoners' Dilemma and Collective Action",
+        "Model": "Intro_ The Prisoners' Dilemma and Collective Action",
         "Description": "\"Collective action refers to action taken together by a group of people whose goal is to enhance their status and achieve a common objective.[1] It is enacted by a representative of the group.[2] It is a term that has formulations and theories in many areas of the social sciences including psychology, sociology, anthropology, political science and economics.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 23,
-        "Model": "17 - 2 - Seven Ways To Cooperation",
+        "Model": "Seven Ways To Cooperation",
         "Description": "\"A whole bunch of ways in which we can get cooperation [inaudible] dilemma. It can be repeated, direct reciprocity; it c ould be reputation, indirect reciprocity. >> Yeah. It can be a network effect. It can be group selection, where groups fight against each other, and so the groups that cooperate are likely to win. There can be kin selection, where what happens is that I cooperate with people who are like me. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 23,
-        "Model": "17 - 3 - Collective Action and Common Pool Resource Problems",
+        "Model": "Collective Action and Common Pool Resource Problems",
         "Description": "\"The term \"collective action problem\" describes the situation in which multiple individuals would all benefit from a certain action, but has an associated cost making it implausible that any individual can or will undertake and solve it alone.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 23,
-        "Model": "17 - 4 - No Panacea",
+        "Model": "No Panacea",
         "Description": "\"When you think about the mechanisms you need to induce in this setting you gotta focus a lot more attention on this person than you do on this person, because the person at the head of the stream has a larger influence than people downstream [inaudible]. So, again, not quite the same as just rotating cattle on the common, and also, not the same as harvesting lobster. So, the particulars matter. In each one of these cases, Hence Ostrom says no panacea. So what we've seen in this simple lecture is that we can write down these mathematical models and say, here's a collective action problem, here's a common pool resource problem, here's a prisoner's dilemma. And by bringing that model to bear in a real life situation, we identify the nature of the problem. Once we've identified the nature of the problem, then we can use our expertise at a particular situation, embrace the particulars, take thicker descriptions of what's going on and then construct institutions and incentives that help us solve those problems. Overcome the collective action problem; solve the common pool resource problem, get cooperation in the prisoner's dilemma. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 24,
-        "Model": "18 - 1 - Mechanism Design",
+        "Model": "Mechanism Design",
         "Description": "\"Mechanism design the standard way, and the standard way is to assume that people are rational. So we're gonna sort of lay out the basics of mechanism design assuming rational agents. But after we do that we'll talk through what if people suffered from physiological biases or were slightly irrational Or what if it were the case that people just followed simple rules would our same results still follow. So we're gonna to have a dialogue using mechanisms design as a framework for thinking again about how we model people. Okay, so that's an outline of what we're going to do. What we're going to do first is just add some of the basics of mechanism design, talk about hidden action information, move on to options, and then conclude with some discussion of public good games. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 24,
-        "Model": "18 - 2 - Hidden Action and Hidden Information",
+        "Model": "Hidden Action and Hidden Information",
         "Description": "\"When you think about designing mechanisms in effect what we are doing, we are designing incentive structures so that we get the sort of outcomes we want. Now to get those outcomes often what we're trying to do is we're trying to induce people into taking the right kinds of effort. So, for example, if I'm an employer, what I'd like to do is I'd like to write a contract so that people actually put forth a lot of effort in their work as opposed to slacking off. Alternatively, if I'm auctioning something off, what I'd like people to do is reveal their information. I like them to reveal how much they value something. So, another feature that we want when we construct mechanisms is revelation of information. So, when I think about mechanism design, two of the core problems are dealing with these hidden actions and dealing with hidden information. So, how do we write mechanisms or incentive structures that overcome those two problems? ...\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 24,
-        "Model": "18 - 3 - Auctions",
+        "Model": "Auctions",
         "Description": "\"we can write down models of auctions and we can develop some really profound results saying that it doesn't matter how you auction things off provided some conditions are met. So that's really nice. It sort of frees us up to think about other things. And it frees us up to think about how are people are actually going to behave. How much information do they have? How sophisticated are they? How many of them are there? And that can then, then we can use those criteria to decide which auctions we're going to use. As opposed to spending our time thinking about, well this auction is better than this auction on purely rational grounds. So we talked about what, why do we model. But why do we assume even rational actors? Remember, I said, benchmarks are good things. Remember I said Roger Myerson says, the one who's got the revenue equivalent theorum, that, assuming rational behavior's often a very good benchmark. Well, we saw that was the case here in options, because we see. If people are rational, doesn't matter what mechanism you use. Once we relax that assumption, then the mechanism may matter. But, now we know what criteria to use to think about choosing among auction mechanisms. \"- Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 24,
-        "Model": "18 - 4 - Public Projects",
+        "Model": "Public Projects",
         "Description": "\"In this public project case, or in the auction case. We don't know people's values, so what we'd like to do is we'd like to create a mechanism where people truthfully reveal their values, and where we get outcomes that are desired outcomes. So in the case of an auction, we sell it to the person who values it the most. And in the case of a public project, we undertake the public project if it's worth doing. All right, so that's mechanism design and it's really interesting, it's a way to use models to try and design institutions so they're more efficient. Now one thing we saw now, and I wanna be very careful, is most mechanism design assumes people are rational, but we talk about auctions, some [inaudible] we saw that, if we don't assume people rational, we maybe get slightly different implications of what we should do. \" -  Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 25,
-        "Model": "19 - 1 - Replicator Dynamics",
+        "Model": "Replicator Dynamics",
         "Description": "\"The replicator dynamics are part of evolutionary game theory and are especially prominent in models of cultural evolution. Evolutionary game theory uses principles of interactive behavior to explain the emergence of behavioral regularities in organisms forming a population. ... An organism's offspring inherit its traits.\" - Encyclopedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 25,
-        "Model": "19 - 2 - The Replicator Equation",
+        "Model": "The Replicator Equation",
         "Description": "\"In mathematics, the replicator equation is a deterministic monotone non-linear and non-innovative game dynamic used in evolutionary game theory. ... This important property allows the replicator equation to capture the essence of selection.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 25,
-        "Model": "19 - 3 - Fisher's Theorem",
+        "Model": "Fisher's Theorem",
         "Description": "\"Fisher's fundamental theorem of natural selection is an idea about genetic variance in population genetics developed by the statistician and evolutionary biologist Ronald Fisher. It uses some mathematical notation but is not a theorem in the mathematical sense.\" - Wikipedia",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 25,
-        "Model": "19 - 4 - Variation or Six Sigma",
+        "Model": "Variation or Six Sigma",
         "Description": "\"by having multiple models, we can then adjudicate which models can work in which setting by looking at the assumptions of those models. If we just have opposite proverbs, we're stuck with two contradictory statements. So one of the huge advantages of becoming a many model thinker is that you can then look at the assumptions of the model, What's the assumptions in Fischer's fundamental theorem is that, that landscape that you're not at a peak. Cuz, you?re not at a peak you want to move towards it. In the Sixth Sigma setting, they presumption is that you?re at the peak and therefore you want to reduce variation. So this is, I think a really nice example, Fishers Fundamental Theorem, and the contrast with Sixth Sigma of seeing how thinking with models helps us make sense of the world.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 26,
-        "Model": "20 - 1 - Prediction",
+        "Model": "Prediction",
         "Description": "\"These many models are actually better than individual models, even if the many models are all equally good on their own. So, you get the wisdom of crowd's effect being the fact that the diversity of models is really powerful. That's why they call this the Diversity Prediction Theorem because diversity ends up being really valuable in crowds of people getting things right. Alright, so that's an outline of what we're gonna do. We're gonna talk about prediction at individual level and at the collective level and we'll show how having many models results in something what you call [inaudible] prediction theorem and then diverse sets of models need to more accurate collective forecast and then explains what some people call a wisdom of crowds phenomena.\" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 26,
-        "Model": "20 - 2 - Linear Models",
+        "Model": "Linear Models",
         "Description": "\"Linear models describe a continuous response variable as a function of one or more predictor variables. They can help you understand and predict the behavior of complex systems or analyze experimental, financial, and biological data. Linear regression is a statistical method used to create a linear model.\" - MathWorks",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 26,
-        "Model": "20 - 3 - Diversity Prediction Theorem",
+        "Model": "Diversity Prediction Theorem",
         "Description": "\"Diversity prediction theorem is a draft programming task. ... Scott E. Page introduced the diversity prediction theorem: \"The squared error of the collective prediction equals the average squared error minus the predictive diversity\". Therefore, when the diversity in a group is large, the error of the crowd is small.\"- Rosetta Code",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
     {
         "Category": 26,
-        "Model": "20 - 4 - The Many Model Thinker",
+        "Model": "The Many Model Thinker",
         "Description": "\"By constructing these models they're this crutch for us, they help us clarify our thinking, we're better thinkers, we use data better, we can design and strategize better and we're just more intelligent citizens. I hope you've enjoyed taking this class. I've certainly had a lot of fun putting it together and I've learned a lot in the process and I apologize for any confusion and technological glitches and delays and things like that, but we've done the best we can do. I particularly want to thank Tom and Leia, two undergraduate. >> [inaudible] machine who have helped me throughout this whole process, They've just been absolutely fabulous, they've given me incredible support and they've helped a lot in all sorts of ways you can never imagine. \" - Transcript from Scott Page Coursera",
         "Source": "Scott Page Model Thinking MOOC Course"
     },
