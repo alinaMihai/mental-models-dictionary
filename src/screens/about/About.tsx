@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const AboutWrapper = styled.div`
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 800px;
+  padding: 10px;
 `;
 
 const About = () => {
