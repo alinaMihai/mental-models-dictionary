@@ -6,7 +6,7 @@ export const typeScale = {
   header3: '2.36rem',
   header4: '1.77rem',
   header5: '1.33rem',
-  paragraph: '1rem',
+  paragraph: '1.25rem',
   helperText: '0.8rem',
   copyrightText: '0.7rem',
 };

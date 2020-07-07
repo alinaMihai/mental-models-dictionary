@@ -6,6 +6,9 @@ import { MentalModel } from '../models-list/ModelsList';
 const Wrapper = styled.div`
   flex: 3;
   overflow-y: auto;
+  .emptyMessage {
+    margin-top: calc(50% / 2.5 + 10px);
+  }
   p {
     flex: 3;
     padding-right: 10px;
@@ -28,7 +31,7 @@ type Props = {
 export const ModelViewDesktop = ({ item }: Props) => {
   return !item.Model ? (
     <Wrapper id={'modelView'}>
-      <p>
+      <p className="emptyMessage">
         Click on one of the mental models to see details. Use up and down arrow
         keys to navigate through the list
       </p>

@@ -9,6 +9,7 @@ import { useWindowSize, sizes } from 'helpers';
 const Wrapper = styled.div`
   flex: 3;
   overflow-y: auto;
+  padding: 0 15px;
   p {
     flex: 3;
     padding-right: 10px;
@@ -33,6 +34,13 @@ const Wrapper = styled.div`
     padding: 5px 0;
     margin: 0;
     text-align: left;
+  }
+  h2 {
+    display: flex;
+  }
+  h2 span {
+    flex: 1;
+    line-height: 1.4;
   }
   ${({ theme }) => theme.laptop`
      margin-left:40px;
@@ -75,7 +83,7 @@ export const ModelViewMobile = ({ item }: Props) => {
             src={showContent ? arrowUp : arrowDown}
             alt={`toggle ${showContent ? 'down' : 'up'}`}
           />
-          {item.Model}
+          <span>{item.Model}</span>
         </h2>
       </button>
       {showContent && (

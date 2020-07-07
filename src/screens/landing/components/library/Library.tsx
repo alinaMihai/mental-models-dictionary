@@ -6,7 +6,10 @@ import { useWindowSize, sizes } from 'helpers';
 
 const Wrapper = styled.div`
   width: 100%;
-  overflow-y: auto;
+  .rowContainer {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
 `;
 
 const Row = styled.ul`
@@ -57,7 +60,7 @@ export const Library = ({ items = [] }: LibraryProps) => {
     }
     return rows.map((row, rowIndex) => {
       return (
-        <div key={rowIndex}>
+        <div key={rowIndex} className="rowContainer">
           <Row key={rowIndex}>
             {row.map((item) => (
               <Book key={item.id} item={item} />

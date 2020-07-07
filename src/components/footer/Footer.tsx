@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { typeScale } from 'helpers';
 
 const CopyrightWrapper = styled.p`
-  font-size: ${typeScale.copyrightText};
+  font-size: ${typeScale.paragraph};
 `;
 
 const Copyright = ({ text }) => {

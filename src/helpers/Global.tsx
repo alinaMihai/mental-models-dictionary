@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { primaryFont } from './typography';
+import { primaryFont, typeScale } from './typography';
 import { normalize } from 'polished';
 
 export const GlobalStyle = createGlobalStyle`
@@ -16,10 +16,21 @@ body {
   font-family: ${primaryFont};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 main {
   width: 90%;
   margin: 0 auto;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100vh;
+    overflow: auto;
+}
+p {
+  font-size: ${typeScale.paragraph};
 }
 `;

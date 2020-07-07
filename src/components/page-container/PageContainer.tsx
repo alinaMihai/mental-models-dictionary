@@ -6,22 +6,23 @@ import { Subtitle } from '../subtitle/Subtitle';
 import { SideMenu } from '../side-menu/SideMenu';
 
 const Content = styled.div`
-  grid-column: 1/6;
   padding: 10px;
   align-self: flex-start;
   width: 100%;
-  height: 100%;
   padding-top: 0;
   display: flex;
   flex-direction: column;
   min-width: 355px;
+  flex: 1;
+  ${({ theme }) => theme.laptop`
+    padding: 0;
+  `}
 `;
 
 const Header = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-column: 1 / 6;
   align-self: flex-start;
   padding: 10px;
   text-align: center;
@@ -34,8 +35,8 @@ const Header = styled.header`
   `}
 `;
 const FooterWrapper = styled.div`
-  grid-column: 1 / 6;
   align-self: flex-end;
+  width: 100%;
 `;
 const TopMenu = styled.div`
   padding: 30px;
@@ -44,16 +45,14 @@ const TopMenu = styled.div`
   `}
 `;
 const PageContainerWrapper = styled.div`
-  height: 100vh;
-  overflow: auto;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   & > * {
     display: flex;
     align-items: center;
   }
   ${({ theme }) => theme.laptopL`
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 200px 1fr;
   `}
 `;
 interface IpageContainer {
@@ -67,18 +66,20 @@ export const PageContainer = ({
   subtitle,
 }: IpageContainer) => {
   return (
-    <PageContainerWrapper>
+    <>
       <TopMenu>
         <SideMenu />
       </TopMenu>
-      <Header>
-        <Title>{title}</Title>
-        {subtitle && <Subtitle>{subtitle}</Subtitle>}
-      </Header>
-      <Content>{children}</Content>
-      <FooterWrapper>
-        <Footer />
-      </FooterWrapper>
-    </PageContainerWrapper>
+      <PageContainerWrapper>
+        <Header>
+          <Title>{title}</Title>
+          {subtitle && <Subtitle>{subtitle}</Subtitle>}
+        </Header>
+        <Content>{children}</Content>
+        <FooterWrapper>
+          <Footer />
+        </FooterWrapper>
+      </PageContainerWrapper>
+    </>
   );
 };
