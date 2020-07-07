@@ -25,7 +25,7 @@ type Props = {
   item: MentalModel;
 };
 
-export const ModelView = ({ item }: Props) => {
+export const ModelViewDesktop = ({ item }: Props) => {
   return !item.Model ? (
     <Wrapper id={'modelView'}>
       <p>

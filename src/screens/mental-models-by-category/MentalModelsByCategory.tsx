@@ -16,7 +16,8 @@ import { PageContainer } from 'components';
 import Spinner from 'components/spinner/Spinner';
 import { useKeyPress } from 'helpers';
 import { ModelsList, MentalModel } from './components/models-list/ModelsList';
-import { ModelView } from './components/model-view/ModelView';
+import { ModelViewDesktop } from './components/model-view/ModelViewDesktop';
+import { ModelViewMobile } from './components/model-view/ModelViewMobile';
 import { BookItem } from '../landing/components/book/Book';
 
 const WrapperDesktop = styled.div`
@@ -105,13 +106,13 @@ const MentalModelsByCategory: React.FC = () => {
               onClick={handleItemClick}
               handleMouseOver={setIsMouseOverList}
             />
-            <ModelView item={selectedModel} />
+            <ModelViewDesktop item={selectedModel} />
           </WrapperDesktop>
 
           <WrapperMobile>
             {models.map((item, i) => (
               <div key={i}>
-                <ModelView item={item} />
+                <ModelViewMobile item={item} />
               </div>
             ))}
           </WrapperMobile>
